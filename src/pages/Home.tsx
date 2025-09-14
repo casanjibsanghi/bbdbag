@@ -168,29 +168,26 @@ const Home = () => {
               </h2>
               
               <h3 className="text-2xl font-semibold text-secondary mb-4">
-                Annual Professional Excellence Conclave 2025
+                4th Annual General Meeting
               </h3>
               
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Join us for our flagship annual event featuring keynote speakers, panel discussions, 
-                and networking opportunities. This year's theme focuses on "Innovation in Professional 
-                Practice" with sessions on emerging trends, technology integration, and sustainable 
-                business practices. Connect with industry leaders and expand your professional network.
+                NEST: Networking | Entrepreneurship | Skills | Technology
               </p>
 
               {/* Event Details */}
               <div className="space-y-3 mb-8">
                 <div className="flex items-center text-muted-foreground">
                   <Calendar className="w-5 h-5 mr-3 text-primary" />
-                  <span>March 15, 2025 | 9:00 AM - 5:00 PM</span>
+                  <span>September 21, 2025</span>
                 </div>
                 <div className="flex items-center text-muted-foreground">
                   <MapPin className="w-5 h-5 mr-3 text-primary" />
-                  <span>BBD Bag Ashika Conference Hall, Kolkata</span>
+                  <span>Silver Spring Club, Kolkata</span>
                 </div>
                 <div className="flex items-center text-muted-foreground">
                   <Clock className="w-5 h-5 mr-3 text-primary" />
-                  <span>Registration: 8:30 AM onwards</span>
+                  <span>Timing: 11:00 AM onwards| Followed by Lunch</span>
                 </div>
               </div>
 
