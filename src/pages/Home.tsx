@@ -3,7 +3,7 @@ import HeroSlider from '@/components/HeroSlider';
 import PersonCard from '@/components/PersonCard';
 import { Button } from '@/components/ui/button';
 import { Calendar, MapPin, Clock, Users, ArrowRight } from 'lucide-react';
-import profileImage from '@/assets/Sanjib Sanghi_High Res.png';
+import profileImage from '@/assets/sanjib-sanghi-high-res.png';
 
 // Mock data for leadership (Office Bearers 2025-26)
 const officebearers = [

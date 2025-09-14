@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from '@/assets/Sanjib Sanghi_High Res.png';
+
 
 interface PersonCardProps {
   name: string;

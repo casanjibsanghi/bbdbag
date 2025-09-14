@@ -2,7 +2,7 @@ import React from 'react';
 import PersonCard from '@/components/PersonCard';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Calendar, Target, Users, Award, Lightbulb, Heart } from 'lucide-react';
-import profileImage from '@/assets/Sanjib Sanghi_High Res.png';
+import profileImage from '@/assets/sanjib-sanghi-high-res.png';
 
 // Mock data for different member categories
 const officeBarers = [
