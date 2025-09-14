@@ -142,7 +142,7 @@ const Home = () => {
       </section>
 
       {/* Upcoming Event Section */}
-      <section className="py-16 lg:py-24 bg-bbd-gray-50">
+      <section className="pt-8 pb-16 lg:pt-12 lg:pb-24 bg-bbd-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Event Flyer */}
