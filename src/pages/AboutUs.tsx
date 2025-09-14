@@ -91,12 +91,13 @@ const executiveCommittee = [
   { name: "AGARWAL SANJEEV KUMAR", role: "Executive Committee" },
   { name: "PATRA DEBAYAN", role: "Executive Committee" }
 ];
-const specialInvitees = Array.from({
-  length: 5
-}, (_, i) => ({
-  name: `Special Invitee ${i + 1}`,
-  role: "Special Invitee"
-}));
+const specialInvitees = [
+  { name: "AGARWAL SHYAM", role: "Special Invitee" },
+  { name: "SINGH RAKESH", role: "Special Invitee" },
+  { name: "GADIA MANISH", role: "Special Invitee" },
+  { name: "BAJAJ ROSHAN KUMAR", role: "Special Invitee" },
+  { name: "MUNDRA MANISH", role: "Special Invitee" }
+];
 const milestones = [{
   year: "2010",
   event: "Association founded with 25 charter members"
