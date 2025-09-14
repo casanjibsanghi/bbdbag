@@ -244,7 +244,15 @@ const AboutUs = () => {
 
             {/* Single row of 5 */}
             <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6">
-              {specialInvitees.map((member, index) => <PersonCard key={index} name={member.name} role={member.role} photo={bbdLogo} className="animate-scale-in" />)}
+              {specialInvitees.map((member, index) => (
+                <PersonCard
+                  key={index}
+                  name={member.name}
+                  role={member.role}
+                  photo={member.photo}
+                  className="animate-scale-in"
+                />
+              ))}
             </div>
           </div>
         </div>
