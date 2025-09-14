@@ -156,7 +156,7 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Event Flyer */}
             <div className="animate-scale-in">
-                <div className="relative">
+                <div className="relative max-w-md mx-auto">
                   <img
                     src={agmFlyer}
                     alt="BBD Bag Professional Association Annual General Meeting 2025 Flyer"
