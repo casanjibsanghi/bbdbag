@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold leading-tight">
-                    BBD Bag Professional
+                    BBD Bag Professional Association
                     <br />
                     
                   </h3>
