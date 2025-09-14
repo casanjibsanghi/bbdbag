@@ -47,7 +47,7 @@ const Navigation = () => {
             </div>
             <div className="hidden sm:block">
               <h1 className="text-xl font-bold text-secondary leading-tight">
-                BBD Bag Professional
+                BBD Bag Professional Association
                 <br />
                 
               </h1>
