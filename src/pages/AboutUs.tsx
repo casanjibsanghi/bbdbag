@@ -3,23 +3,27 @@ import PersonCard from '@/components/PersonCard';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Calendar, Target, Users, Award, Lightbulb, Heart } from 'lucide-react';
 import profileImage from '@/assets/sanjib-sanghi-high-res.png';
+import akMaheshwariImage from '@/assets/AK-Maheshwari.jpeg';
+import apurvaImage from '@/assets/Apurva.jpeg';
+import parasImage from '@/assets/Paras.jpg';
+import rkVyasImage from '@/assets/RK Vyas.jpeg';
 
 // Mock data for different member categories
 const officeBarers = [
   // Same as Home page - 13 members in 3:3:4:3 layout
-  { name: "Dr. Rajesh Kumar", role: "President" },
-  { name: "Ms. Priya Sharma", role: "Vice President" },
-  { name: "Mr. Amit Singh", role: "Secretary" },
-  { name: "Dr. Meera Gupta", role: "Joint Secretary" },
-  { name: "Mr. Suresh Chandra", role: "Treasurer" },
-  { name: "Ms. Kavita Rao", role: "Assistant Secretary" },
-  { name: "Dr. Anita Devi", role: "Program Director" },
-  { name: "Mr. Vikash Jha", role: "Media Coordinator" },
-  { name: "Ms. Sunita Roy", role: "Member Relations" },
-  { name: "Dr. Rahul Mishra", role: "Research Head" },
-  { name: "Mr. Debasis Sen", role: "Events Manager" },
-  { name: "Ms. Ritu Agarwal", role: "Documentation" },
-  { name: "Dr. Santosh Kumar", role: "Advisory Member" }
+  { name: "Dr. Rajesh Kumar", role: "President", photo: profileImage },
+  { name: "Ms. Priya Sharma", role: "Vice President", photo: akMaheshwariImage },
+  { name: "Mr. Amit Singh", role: "Secretary", photo: apurvaImage },
+  { name: "Dr. Meera Gupta", role: "Joint Secretary", photo: parasImage },
+  { name: "Mr. Suresh Chandra", role: "Treasurer", photo: rkVyasImage },
+  { name: "Ms. Kavita Rao", role: "Assistant Secretary", photo: profileImage },
+  { name: "Dr. Anita Devi", role: "Program Director", photo: akMaheshwariImage },
+  { name: "Mr. Vikash Jha", role: "Media Coordinator", photo: apurvaImage },
+  { name: "Ms. Sunita Roy", role: "Member Relations", photo: parasImage },
+  { name: "Dr. Rahul Mishra", role: "Research Head", photo: rkVyasImage },
+  { name: "Mr. Debasis Sen", role: "Events Manager", photo: profileImage },
+  { name: "Ms. Ritu Agarwal", role: "Documentation", photo: akMaheshwariImage },
+  { name: "Dr. Santosh Kumar", role: "Advisory Member", photo: apurvaImage }
 ];
 
 const executiveCommittee = Array.from({ length: 15 }, (_, i) => ({
@@ -177,7 +181,7 @@ const AboutUs = () => {
                     key={index}
                     name={member.name}
                     role={member.role}
-                    photo={profileImage}
+                    photo={member.photo}
                     className="animate-scale-in"
                   />
                 ))}
@@ -190,7 +194,7 @@ const AboutUs = () => {
                     key={index}
                     name={member.name}
                     role={member.role}
-                    photo={profileImage}
+                    photo={member.photo}
                     className="animate-scale-in"
                   />
                 ))}
@@ -203,7 +207,7 @@ const AboutUs = () => {
                     key={index}
                     name={member.name}
                     role={member.role}
-                    photo={profileImage}
+                    photo={member.photo}
                     className="animate-scale-in"
                   />
                 ))}
@@ -216,7 +220,7 @@ const AboutUs = () => {
                     key={index}
                     name={member.name}
                     role={member.role}
-                    photo={profileImage}
+                    photo={member.photo}
                     className="animate-scale-in"
                   />
                 ))}
