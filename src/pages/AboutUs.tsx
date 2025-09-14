@@ -6,7 +6,7 @@ import profileImage from '@/assets/sanjib-sanghi-high-res.png';
 import akMaheshwariImage from '@/assets/AK-Maheshwari.jpeg';
 import apurvaImage from '@/assets/Apurva.jpeg';
 import parasImage from '@/assets/Paras.jpg';
-import rkVyasImage from '@/assets/RK Vyas.jpeg';
+import rkVyasImage from '@/assets/RK-Vyas.jpeg';
 
 // Mock data for different member categories
 const officeBarers = [
