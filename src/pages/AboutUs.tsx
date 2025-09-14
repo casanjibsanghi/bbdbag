@@ -2,6 +2,7 @@ import React from 'react';
 import PersonCard from '@/components/PersonCard';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Calendar, Target, Users, Award, Lightbulb, Heart } from 'lucide-react';
+import profileImage from '@/assets/Sanjib Sanghi_High Res.png';
 
 // Mock data for different member categories
 const officeBarers = [
@@ -176,6 +177,7 @@ const AboutUs = () => {
                     key={index}
                     name={member.name}
                     role={member.role}
+                    photo={profileImage}
                     className="animate-scale-in"
                   />
                 ))}
@@ -188,6 +190,7 @@ const AboutUs = () => {
                     key={index}
                     name={member.name}
                     role={member.role}
+                    photo={profileImage}
                     className="animate-scale-in"
                   />
                 ))}
@@ -200,6 +203,7 @@ const AboutUs = () => {
                     key={index}
                     name={member.name}
                     role={member.role}
+                    photo={profileImage}
                     className="animate-scale-in"
                   />
                 ))}
@@ -212,6 +216,7 @@ const AboutUs = () => {
                     key={index}
                     name={member.name}
                     role={member.role}
+                    photo={profileImage}
                     className="animate-scale-in"
                   />
                 ))}
@@ -237,6 +242,7 @@ const AboutUs = () => {
                   key={index}
                   name={member.name}
                   role={member.role}
+                  photo={profileImage}
                   className="animate-scale-in"
                 />
               ))}
@@ -261,6 +267,7 @@ const AboutUs = () => {
                   key={index}
                   name={member.name}
                   role={member.role}
+                  photo={profileImage}
                   className="animate-scale-in"
                 />
               ))}

@@ -3,6 +3,7 @@ import HeroSlider from '@/components/HeroSlider';
 import PersonCard from '@/components/PersonCard';
 import { Button } from '@/components/ui/button';
 import { Calendar, MapPin, Clock, Users, ArrowRight } from 'lucide-react';
+import profileImage from '@/assets/Sanjib Sanghi_High Res.png';
 
 // Mock data for leadership (Office Bearers 2025-26)
 const officebearers = [
@@ -92,6 +93,7 @@ const Home = () => {
                   key={member.order}
                   name={member.name}
                   role={member.role}
+                  photo={profileImage}
                   className="animate-scale-in"
                 />
               ))}
@@ -104,6 +106,7 @@ const Home = () => {
                   key={member.order}
                   name={member.name}
                   role={member.role}
+                  photo={profileImage}
                   className="animate-scale-in"
                 />
               ))}
@@ -116,6 +119,7 @@ const Home = () => {
                   key={member.order}
                   name={member.name}
                   role={member.role}
+                  photo={profileImage}
                   className="animate-scale-in"
                 />
               ))}
@@ -128,6 +132,7 @@ const Home = () => {
                   key={member.order}
                   name={member.name}
                   role={member.role}
+                  photo={profileImage}
                   className="animate-scale-in"
                 />
               ))}
