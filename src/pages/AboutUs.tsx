@@ -22,6 +22,12 @@ import rakeshSinghImage from '@/assets/rakesh.jpeg';
 import manishImage from '@/assets/manish.jpeg';
 import roshanImage from '@/assets/roshan.jpeg';
 import manishMundhraImage from '@/assets/manish-mundhra.jpeg';
+import debayanImage from '@/assets/debayan.jpeg';
+import ravishahImage from '@/assets/ravi-shah.jpeg';
+import sumitImage from '@/assets/sumit.jpeg';
+import cbsinhaImage from '@/assets/cb-sinha.jpeg';
+import vardhmanImage from '@/assets/vardhman.jpeg';
+import anilImage from '@/assets/anil.jpeg';
 
 // Mock data for different member categories
 const officeBarers = [
@@ -80,21 +86,21 @@ const officeBarers = [
   photo: muskanImage
 }];
 const executiveCommittee = [
-  { name: "CA Anil Kumar Mandawewala", role: "Executive Committee" },
+  { name: "CA Anil Kumar Mandawewala", role: "Executive Committee", photo: anilImage },
   { name: "CA Kamal Somani", role: "Executive Committee" },
   { name: "CA Mahadev Lal Agarwal", role: "Executive Committee" },
-  { name: "CA Vardhman Chhalani", role: "Executive Committee" },
-  { name: "CA Chandra Bhanu Sinha", role: "Executive Committee" },
+  { name: "CA Vardhman Chhalani", role: "Executive Committee", photo: vardhmanImage },
+  { name: "CA Chandra Bhanu Sinha", role: "Executive Committee", photo: cbsinhaImage },
   { name: "CA Lalit Kumar Shroff", role: "Executive Committee" },
   { name: "CA Sandeep Kumar Goyal", role: "Executive Committee" },
   { name: "CS Ravi Verma", role: "Executive Committee" },
   { name: "CA Ravi Sureka", role: "Executive Committee" },
   { name: "CA Gaurav More", role: "Executive Committee" },
-  { name: "CA Sumit Binani", role: "Executive Committee" },
+  { name: "CA Sumit Binani", role: "Executive Committee", photo: sumitImage },
   { name: "CA Nilima Joshi", role: "Executive Committee" },
-  { name: "CA Ravi Kumar Shah", role: "Executive Committee" },
+  { name: "CA Ravi Kumar Shah", role: "Executive Committee", photo: ravishahImage },
   { name: "CA Sanjeev Kumar Agarwal", role: "Executive Committee" },
-  { name: "CA Debayan Patra", role: "Executive Committee" }
+  { name: "CA Debayan Patra", role: "Executive Committee", photo: debayanImage }
 ];
 const specialInvitees = [
   { name: "CA Shyam Agarwal", role: "Special Invitee", photo: shyamImage },
