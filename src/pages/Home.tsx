@@ -28,7 +28,7 @@ const officebearers = [
   // Row 2 (3 members)
   { name: "Adv. Paras Kochar", role: "Immediate Past President", order: 4, photo: parasImage },
   { name: "CA Rajendra Kumar Vyas", role: "Past President", order: 5, photo: rkVyasImage },
-  { name: "CA Ashoke Kumar Maheshwari", role: "Assistant Secretary", order: 6, photo: akMaheshwariImage },
+  { name: "CA Ashoke Kumar Maheshwari", role: "Past President", order: 6, photo: akMaheshwariImage },
   // Row 3 (4 members)
   { name: "CA Pramod Agarwal", role: "Secretary", order: 7, photo: pramodImage },
   { name: "CA Apurva Maheshwari", role: "Joint Secretary", order: 8, photo: apurvaImage },
