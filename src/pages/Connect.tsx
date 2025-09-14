@@ -10,21 +10,21 @@ const Connect = () => {
   const contactInfo = {
     address: [
       "BBD Bag Professional Association",
-      "123 Business Centre, BBD Bagh",
-      "Kolkata - 700001",
+      "Commerce House, 2A Ganesh Chandra Avenue",
+      "4th Floor, Room No.: 1",
+      "Kolkata - 700 001",
       "West Bengal, India"
     ],
-    email: "contact@bbdprofessional.org",
-    phone: "+91 98765 43210"
+    email: "office@bbdbag.com",
+    phone: "+91 93310 32177"
   };
 
   const bankDetails = {
     accountName: "BBD Bag Professional Association",
-    accountNumber: "1234567890123456",
-    bankName: "State Bank of India",
-    branch: "BBD Bagh Branch",
-    ifsc: "SBIN0001234",
-    upi: "bbdprofessional@sbi"
+    accountNumber: "019094600002407",
+    bankName: "YES Bank",
+    branch: "Dalhousie Branch, Kolkata-700 001",
+    ifsc: "YESB0000190",
   };
 
   const socialLinks = [
@@ -73,7 +73,6 @@ Account Number: ${bankDetails.accountNumber}
 Bank: ${bankDetails.bankName}
 Branch: ${bankDetails.branch}
 IFSC: ${bankDetails.ifsc}
-UPI: ${bankDetails.upi}
     `.trim();
     
     await copyToClipboard(bankText, "Bank Details");
@@ -231,8 +230,7 @@ UPI: ${bankDetails.upi}
                     </div>
                     
                     <div>
-                      <span className="font-medium">UPI:</span>
-                      <p className="text-muted-foreground font-mono">{bankDetails.upi}</p>
+                      
                     </div>
                   </div>
                 </div>
