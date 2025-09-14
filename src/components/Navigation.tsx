@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Linkedin, Facebook, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import bbdLogo from '@/assets/BBD-Logo.jpeg';
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,8 +43,12 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group" aria-label="BBD Bag Professional Association Home">
-            <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center group-hover:shadow-red transition-all duration-300">
-              <span className="text-white font-bold text-xl">BBD</span>
+            <div className="w-12 h-12 rounded-xl overflow-hidden group-hover:shadow-red transition-all duration-300">
+              <img 
+                src={bbdLogo} 
+                alt="BBD Bag Professional Association Logo" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="hidden sm:block">
               <h1 className="text-xl font-bold text-secondary leading-tight">

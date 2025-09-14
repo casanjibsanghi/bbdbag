@@ -8,6 +8,7 @@ import akMaheshwariImage from '@/assets/AK-Maheshwari.jpeg';
 import apurvaImage from '@/assets/Apurva.jpeg';
 import parasImage from '@/assets/Paras.jpg';
 import rkVyasImage from '@/assets/RK-Vyas.jpeg';
+import bbdLogo from '@/assets/BBD-Logo.jpeg';
 import pradeepImage from '@/assets/pradeep.jpeg';
 import rakeshImage from '@/assets/Rakesh.jpeg';
 import sanjayImage from '@/assets/sanjay.jpg';

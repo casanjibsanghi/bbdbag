@@ -7,6 +7,7 @@ import akMaheshwariImage from '@/assets/AK-Maheshwari.jpeg';
 import apurvaImage from '@/assets/Apurva.jpeg';
 import parasImage from '@/assets/Paras.jpg';
 import rkVyasImage from '@/assets/RK-Vyas.jpeg';
+import bbdLogo from '@/assets/BBD-Logo.jpeg';
 
 // Mock data for different member categories
 const officeBarers = [
@@ -246,7 +247,7 @@ const AboutUs = () => {
                   key={index}
                   name={member.name}
                   role={member.role}
-                  photo={profileImage}
+                  photo={bbdLogo}
                   className="animate-scale-in"
                 />
               ))}
@@ -271,7 +272,7 @@ const AboutUs = () => {
                   key={index}
                   name={member.name}
                   role={member.role}
-                  photo={profileImage}
+                  photo={bbdLogo}
                   className="animate-scale-in"
                 />
               ))}
