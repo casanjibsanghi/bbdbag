@@ -80,21 +80,21 @@ const officeBarers = [
   photo: muskanImage
 }];
 const executiveCommittee = [
-  { name: "MANDAWEWALA ANIL KUMAR", role: "Executive Committee" },
-  { name: "SOMANI KAMAL", role: "Executive Committee" },
-  { name: "AGARWAL MAHADEV LAL", role: "Executive Committee" },
-  { name: "CHHALANI VARDHMAN", role: "Executive Committee" },
-  { name: "SINHA CHANDRA BHANU", role: "Executive Committee" },
-  { name: "SHROFF LALIT KUMAR", role: "Executive Committee" },
-  { name: "GOYAL SANDEEP KUMAR", role: "Executive Committee" },
-  { name: "VERMA RAVI", role: "Executive Committee" },
-  { name: "SUREKA RAVI", role: "Executive Committee" },
-  { name: "MORE GAURAV", role: "Executive Committee" },
-  { name: "BINANI SUMIT", role: "Executive Committee" },
-  { name: "JOSHI NILIMA*", role: "Executive Committee" },
-  { name: "SHAH RAVI KUMAR", role: "Executive Committee" },
-  { name: "AGARWAL SANJEEV KUMAR", role: "Executive Committee" },
-  { name: "PATRA DEBAYAN", role: "Executive Committee" }
+  { name: "CA Anil Kumar Mandawewala", role: "Executive Committee" },
+  { name: "CA Kamal Somani", role: "Executive Committee" },
+  { name: "CA Mahadev Lal Agarwal", role: "Executive Committee" },
+  { name: "CA Vardhman Chhalani", role: "Executive Committee" },
+  { name: "CA Chandra Bhanu Sinha", role: "Executive Committee" },
+  { name: "CA Lalit Kumar Shroff", role: "Executive Committee" },
+  { name: "CA Sandeep Kumar Goyal", role: "Executive Committee" },
+  { name: "CS Ravi Verma", role: "Executive Committee" },
+  { name: "CA Ravi Sureka", role: "Executive Committee" },
+  { name: "CA Gaurav More", role: "Executive Committee" },
+  { name: "CA Sumit Binani", role: "Executive Committee" },
+  { name: "CA Nilima Joshi", role: "Executive Committee" },
+  { name: "CA Ravi Kumar Shah", role: "Executive Committee" },
+  { name: "CA Sanjeev Kumar Agarwal", role: "Executive Committee" },
+  { name: "CA Debayan Patra", role: "Executive Committee" }
 ];
 const specialInvitees = [
   { name: "CA Shyam Agarwal", role: "Special Invitee", photo: shyamImage },
