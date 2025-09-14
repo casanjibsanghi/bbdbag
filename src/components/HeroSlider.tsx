@@ -85,7 +85,7 @@ const HeroSlider = () => {
                     BBD Bag Professional Association
                   </h1>
                   <p className="text-xl sm:text-2xl lg:text-3xl font-light mb-4 opacity-90">
-                    A multidisciplinary forum for professionals in Kolkata
+                    कर्मसु कौशलम्
                   </p>
                   <p className="text-lg sm:text-xl mb-8 opacity-75 max-w-2xl mx-auto">
                     {slide.description}
