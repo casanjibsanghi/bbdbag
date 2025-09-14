@@ -2,68 +2,77 @@ import React from 'react';
 import PersonCard from '@/components/PersonCard';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Calendar, Target, Users, Award, Lightbulb, Heart } from 'lucide-react';
-import profileImage from '@/assets/sanjib-sanghi-high-res.png';
+import sanjibImage from '@/assets/sanjib-sanghi-high-res.png';
 import akMaheshwariImage from '@/assets/AK-Maheshwari.jpeg';
 import apurvaImage from '@/assets/Apurva.jpeg';
 import parasImage from '@/assets/Paras.jpg';
 import rkVyasImage from '@/assets/RK-Vyas.jpeg';
 import bbdLogo from '@/assets/BBD-Logo.jpeg';
+import agmFlyer from '@/assets/BBD-AGM-Flyer.jpeg';
+import pradeepImage from '@/assets/pradeep.jpeg';
+import rakeshImage from '@/assets/Rakesh.jpeg';
+import sanjayImage from '@/assets/sanjay.jpg';
+import srigoppalImage from '@/assets/Srigoppal.jpg';
+import pankajImage from '@/assets/pankaj-verma.jpg';
+import harshImage from '@/assets/Harsh.jpg';
+import muskanImage from '@/assets/Muskan.jpeg';
+import pramodImage from '@/assets/pramod.jpeg';
 
 // Mock data for different member categories
 const officeBarers = [
 // Same as Home page - 13 members in 3:3:4:3 layout
 {
-  name: "Dr. Rajesh Kumar",
+  name: "CA Sanjib Sanghi",
   role: "President",
-  photo: profileImage
+  photo: sanjibImage
 }, {
-  name: "Ms. Priya Sharma",
+  name: "CA Pradeep Kumar Agarwal",
+  role: "Senior Vice President",
+  photo: pradeepImage
+}, {
+  name: "CA Rakesh Kumar Dhaniwala",
   role: "Vice President",
+  photo: rakeshImage
+}, {
+  name: "Adv. Paras Kochar",
+  role: "Immediate Past President",
+  photo: parasImage
+}, {
+  name: "CA Rajendra Kumar Vyas",
+  role: "Past President",
+  photo: rkVyasImage
+}, {
+  name: "CA Ashoke Kumar Maheshwari",
+  role: "Past President",
   photo: akMaheshwariImage
 }, {
-  name: "Mr. Amit Singh",
+  name: "CA Pramod Agarwal",
   role: "Secretary",
-  photo: apurvaImage
+  photo: pramodImage
 }, {
-  name: "Dr. Meera Gupta",
+  name: "CA Apurva Maheshwari",
   role: "Joint Secretary",
-  photo: parasImage
+  photo: apurvaImage
 }, {
-  name: "Mr. Suresh Chandra",
+  name: "Mr. Srigoppal Vyas",
+  role: "Joint Secretary",
+  photo: srigoppalImage
+}, {
+  name: "CA Sanjay Jhajharia",
   role: "Treasurer",
-  photo: rkVyasImage
+  photo: sanjayImage
 }, {
-  name: "Ms. Kavita Rao",
-  role: "Assistant Secretary",
-  photo: profileImage
+  name: "CA Pankaj Kumar Verma",
+  role: "Joint Treasurer",
+  photo: pankajImage
 }, {
-  name: "Dr. Anita Devi",
-  role: "Program Director",
-  photo: akMaheshwariImage
+  name: "CA Harsh Satish Udeyshi",
+  role: "Convenor",
+  photo: harshImage
 }, {
-  name: "Mr. Vikash Jha",
-  role: "Media Coordinator",
-  photo: apurvaImage
-}, {
-  name: "Ms. Sunita Roy",
-  role: "Member Relations",
-  photo: parasImage
-}, {
-  name: "Dr. Rahul Mishra",
-  role: "Research Head",
-  photo: rkVyasImage
-}, {
-  name: "Mr. Debasis Sen",
-  role: "Events Manager",
-  photo: profileImage
-}, {
-  name: "Ms. Ritu Agarwal",
-  role: "Documentation",
-  photo: akMaheshwariImage
-}, {
-  name: "Dr. Santosh Kumar",
-  role: "Advisory Member",
-  photo: apurvaImage
+  name: "CA Muskan Sethia",
+  role: "Dy. Convenor",
+  photo: muskanImage
 }];
 const executiveCommittee = Array.from({
   length: 15
