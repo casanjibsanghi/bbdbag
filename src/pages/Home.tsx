@@ -162,10 +162,6 @@ const Home = () => {
                     alt="BBD Bag Professional Association Annual General Meeting 2025 Flyer"
                     className="w-full rounded-xl shadow-lg"
                   />
-                {/* Limited Seats Badge */}
-                <div className="absolute -top-3 -right-3 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
-                  Limited Seats
-                </div>
               </div>
             </div>
 
