@@ -92,11 +92,11 @@ const executiveCommittee = [
   { name: "PATRA DEBAYAN", role: "Executive Committee" }
 ];
 const specialInvitees = [
-  { name: "AGARWAL SHYAM", role: "Special Invitee" },
-  { name: "SINGH RAKESH", role: "Special Invitee" },
-  { name: "GADIA MANISH", role: "Special Invitee" },
-  { name: "BAJAJ ROSHAN KUMAR", role: "Special Invitee" },
-  { name: "MUNDRA MANISH", role: "Special Invitee" }
+  { name: "CA Shyam Agarwal", role: "Special Invitee", photo: '@/assets/shyam.jpeg' },
+  { name: "CA Rakesh Singh", role: "Special Invitee", photo: '@/assets/rakesh.jpeg' },
+  { name: "CA Manish Gadia", role: "Special Invitee", photo: '@/assets/manish.jpeg' },
+  { name: "CA Roshan Kumar Bajaj", role: "Special Invitee", photo: '@/assets/roshan.jpeg' },
+  { name: "CA Manish Mundhra", role: "Special Invitee", photo: '@/assets/manish-mundhra.jpeg' }
 ];
 const milestones = [{
   year: "2010",
