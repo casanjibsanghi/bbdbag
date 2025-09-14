@@ -74,12 +74,23 @@ const officeBarers = [
   role: "Dy. Convenor",
   photo: muskanImage
 }];
-const executiveCommittee = Array.from({
-  length: 15
-}, (_, i) => ({
-  name: `Member ${i + 1}`,
-  role: "Executive Committee"
-}));
+const executiveCommittee = [
+  { name: "MANDAWEWALA ANIL KUMAR", role: "Executive Committee" },
+  { name: "SOMANI KAMAL", role: "Executive Committee" },
+  { name: "AGARWAL MAHADEV LAL", role: "Executive Committee" },
+  { name: "CHHALANI VARDHMAN", role: "Executive Committee" },
+  { name: "SINHA CHANDRA BHANU", role: "Executive Committee" },
+  { name: "SHROFF LALIT KUMAR", role: "Executive Committee" },
+  { name: "GOYAL SANDEEP KUMAR", role: "Executive Committee" },
+  { name: "VERMA RAVI", role: "Executive Committee" },
+  { name: "SUREKA RAVI", role: "Executive Committee" },
+  { name: "MORE GAURAV", role: "Executive Committee" },
+  { name: "BINANI SUMIT", role: "Executive Committee" },
+  { name: "JOSHI NILIMA*", role: "Executive Committee" },
+  { name: "SHAH RAVI KUMAR", role: "Executive Committee" },
+  { name: "AGARWAL SANJEEV KUMAR", role: "Executive Committee" },
+  { name: "PATRA DEBAYAN", role: "Executive Committee" }
+];
 const specialInvitees = Array.from({
   length: 5
 }, (_, i) => ({
