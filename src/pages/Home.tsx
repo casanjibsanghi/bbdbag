@@ -13,6 +13,10 @@ import agmFlyer from '@/assets/BBD-AGM-Flyer.jpeg';
 import pradeepImage from '@/assets/pradeep.jpeg';
 import rakeshImage from '@/assets/Rakesh.jpeg';
 import sanjayImage from '@/assets/sanjay.jpg';
+import srigoppalImage from '@/assets/Srigoppal.jpg';
+import pankajImage from '@/assets/pankaj-verma.jpg';
+import harshImage from '@/assets/Harsh.jpg';
+import muskanImage from '@/assets/Muskan.jpeg';
 
 // Mock data for leadership (Office Bearers 2025-26)
 const officebearers = [
@@ -27,12 +31,12 @@ const officebearers = [
   // Row 3 (4 members)
   { name: "CA Pramod Agarwal", role: "Secretary", order: 7, photo: profileImage },
   { name: "CA Apurva Maheshwari", role: "Joint Secretary", order: 8, photo: apurvaImage },
-  { name: "Mr. Srigoppal Vyas", role: "Joint Secretary", order: 9, photo: profileImage },
+  { name: "Mr. Srigoppal Vyas", role: "Joint Secretary", order: 9, photo: srigoppalImage },
   { name: "CA Sanjay Jhajharia", role: "Treasurer", order: 10, photo: sanjayImage },
   // Row 4 (4 members)
-  { name: "CA Pankaj Kumar Verma", role: "Joint Treasurer", order: 11, photo: profileImage },
-  { name: "CA Harsh Satish Udeyshi", role: "Convenor", order: 12, photo: profileImage },
-  { name: "CA Muskan Sethia", role: "Dy. Convenor", order: 13, photo: profileImage }
+  { name: "CA Pankaj Kumar Verma", role: "Joint Treasurer", order: 11, photo: pankajImage },
+  { name: "CA Harsh Satish Udeyshi", role: "Convenor", order: 12, photo: harshImage },
+  { name: "CA Muskan Sethia", role: "Dy. Convenor", order: 13, photo: muskanImage }
 ];
 
 const Home = () => {
