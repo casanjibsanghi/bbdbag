@@ -7,22 +7,22 @@ import { Calendar, MapPin, Clock, Users, ArrowRight } from 'lucide-react';
 // Mock data for leadership (Office Bearers 2025-26)
 const officebearers = [
   // Row 1 (3 members)
-  { name: "Dr. Rajesh Kumar", role: "President", order: 1 },
-  { name: "Ms. Priya Sharma", role: "Vice President", order: 2 },
-  { name: "Mr. Amit Singh", role: "Secretary", order: 3 },
+  { name: "CA Sanjib Sanghi", role: "President", order: 1 },
+  { name: "CA Pradeep Kumar Agarwal", role: "Senior Vice President", order: 2 },
+  { name: "CA Rakesh Kumar Dhaniwala", role: "Vice President", order: 3 },
   // Row 2 (3 members)
-  { name: "Dr. Meera Gupta", role: "Joint Secretary", order: 4 },
-  { name: "Mr. Suresh Chandra", role: "Treasurer", order: 5 },
-  { name: "Ms. Kavita Rao", role: "Assistant Secretary", order: 6 },
+  { name: "Adv. Paras Kochar", role: "Immediate Past President", order: 4 },
+  { name: "CA Rajendra Kumar Vyas", role: "Past President", order: 5 },
+  { name: "CA Ashoke Kumar Maheshwari", role: "Assistant Secretary", order: 6 },
   // Row 3 (4 members)
-  { name: "Dr. Anita Devi", role: "Program Director", order: 7 },
-  { name: "Mr. Vikash Jha", role: "Media Coordinator", order: 8 },
-  { name: "Ms. Sunita Roy", role: "Member Relations", order: 9 },
-  { name: "Dr. Rahul Mishra", role: "Research Head", order: 10 },
+  { name: "CA Pramod Agarwal", role: "Secretary", order: 7 },
+  { name: "CA Apurva Maheshwari", role: "Joint Secretary", order: 8 },
+  { name: "Mr. Srigoppal Vyas", role: "Joint Secretary", order: 9 },
+  { name: "CA Sanjay Jhajharia", role: "Treasurer", order: 10 },
   // Row 4 (4 members)
-  { name: "Mr. Debasis Sen", role: "Events Manager", order: 11 },
-  { name: "Ms. Ritu Agarwal", role: "Documentation", order: 12 },
-  { name: "Dr. Santosh Kumar", role: "Advisory Member", order: 13 }
+  { name: "CA Pankaj Kumar Verma", role: "Joint Treasurer", order: 11 },
+  { name: "CA Harsh Satish Udeyshi", role: "Convenor", order: 12 },
+  { name: "CA Muskan Sethia", role: "Dy. Convenor", order: 13 }
 ];
 
 const Home = () => {
