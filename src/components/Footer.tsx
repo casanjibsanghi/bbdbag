@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Linkedin, Facebook, Twitter } from 'lucide-react';
+import bbdLogo from '@/assets/BBD-Logo.jpeg';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -26,8 +27,12 @@ const Footer = () => {
             {/* Logo and Mission */}
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">BBD</span>
+                <div className="w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center">
+                  <img 
+                    src={bbdLogo} 
+                    alt="BBD Bag Professional Association Logo" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold leading-tight">
