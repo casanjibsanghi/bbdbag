@@ -9,6 +9,7 @@ import apurvaImage from '@/assets/Apurva.jpeg';
 import parasImage from '@/assets/Paras.jpg';
 import rkVyasImage from '@/assets/RK-Vyas.jpeg';
 import bbdLogo from '@/assets/BBD-Logo.jpeg';
+import agmFlyer from '@/assets/BBD-AGM-Flyer.jpeg';
 import pradeepImage from '@/assets/pradeep.jpeg';
 import rakeshImage from '@/assets/Rakesh.jpeg';
 import sanjayImage from '@/assets/sanjay.jpg';
@@ -155,18 +156,12 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Event Flyer */}
             <div className="animate-scale-in">
-              <div className="relative">
-                <div className="bg-white rounded-xl card-shadow p-8 text-center">
-                  <div className="w-full h-64 bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg mb-6 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                        <Users className="w-8 h-8 text-white" />
-                      </div>
-                      <h3 className="text-xl font-bold text-secondary">Annual Meet 2025</h3>
-                      <p className="text-muted-foreground">Professional Excellence Conclave</p>
-                    </div>
-                  </div>
-                </div>
+                <div className="relative">
+                  <img
+                    src={agmFlyer}
+                    alt="BBD Bag Professional Association Annual General Meeting 2025 Flyer"
+                    className="w-full rounded-xl shadow-lg"
+                  />
                 {/* Limited Seats Badge */}
                 <div className="absolute -top-3 -right-3 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
                   Limited Seats
