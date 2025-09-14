@@ -17,6 +17,11 @@ import pankajImage from '@/assets/pankaj-verma.jpg';
 import harshImage from '@/assets/Harsh.jpg';
 import muskanImage from '@/assets/Muskan.jpeg';
 import pramodImage from '@/assets/pramod.jpeg';
+import shyamImage from '@/assets/shyam.jpeg';
+import rakeshSinghImage from '@/assets/rakesh.jpeg';
+import manishImage from '@/assets/manish.jpeg';
+import roshanImage from '@/assets/roshan.jpeg';
+import manishMundhraImage from '@/assets/manish-mundhra.jpeg';
 
 // Mock data for different member categories
 const officeBarers = [
@@ -92,11 +97,11 @@ const executiveCommittee = [
   { name: "PATRA DEBAYAN", role: "Executive Committee" }
 ];
 const specialInvitees = [
-  { name: "CA Shyam Agarwal", role: "Special Invitee", photo: '@/assets/shyam.jpeg' },
-  { name: "CA Rakesh Singh", role: "Special Invitee", photo: '@/assets/rakesh.jpeg' },
-  { name: "CA Manish Gadia", role: "Special Invitee", photo: '@/assets/manish.jpeg' },
-  { name: "CA Roshan Kumar Bajaj", role: "Special Invitee", photo: '@/assets/roshan.jpeg' },
-  { name: "CA Manish Mundhra", role: "Special Invitee", photo: '@/assets/manish-mundhra.jpeg' }
+  { name: "CA Shyam Agarwal", role: "Special Invitee", photo: shyamImage },
+  { name: "CA Rakesh Singh", role: "Special Invitee", photo: rakeshSinghImage },
+  { name: "CA Manish Gadia", role: "Special Invitee", photo: manishImage },
+  { name: "CA Roshan Kumar Bajaj", role: "Special Invitee", photo: roshanImage },
+  { name: "CA Manish Mundhra", role: "Special Invitee", photo: manishMundhraImage }
 ];
 const milestones = [{
   year: "2010",
