@@ -11,27 +11,27 @@ import heroSlide5 from '@/assets/hero-slide-5.jpg';
 const slides = [{
   image: heroSlide1,
   title: 'Study & Knowledge',
-  description: 'Empowering professionals through continuous learning and development',
+  description: 'Excellence in Action',
   alt: 'Professional students studying in modern library setting'
 }, {
   image: heroSlide2,
   title: 'Events & Networking',
-  description: 'Building connections that drive professional excellence',
+  description: 'Excellence in Action',
   alt: 'Professional networking event in modern auditorium'
 }, {
   image: heroSlide3,
   title: 'Professional Excellence',
-  description: 'Leading discussions and sharing expertise across disciplines',
+  description: 'Excellence in Action',
   alt: 'Professional panel discussion with speakers'
 }, {
   image: heroSlide4,
   title: 'Community & Impact',
-  description: 'United in our mission to serve and make a difference',
+  description: 'Excellence in Action',
   alt: 'Group photo of professional association members'
 }, {
   image: heroSlide5,
   title: 'Kolkata Professional Hub',
-  description: 'At the heart of Bengal\'s business and professional community',
+  description: 'Excellence in Action',
   alt: 'Kolkata cityscape with BBD Bagh financial district'
 }];
 const HeroSlider = () => {
