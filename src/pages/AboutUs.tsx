@@ -1,7 +1,7 @@
 import React from 'react';
 import PersonCard from '@/components/PersonCard';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Calendar, Target, Users, Award, Lightbulb, Heart } from 'lucide-react';
+import { ArrowRight, Calendar, Target, Users, Award, Lightbulb, Heart, FileText } from 'lucide-react';
 import sanjibImage from '@/assets/sanjib-sanghi-high-res.png';
 import akMaheshwariImage from '@/assets/AK-Maheshwari.jpeg';
 import apurvaImage from '@/assets/Apurva.jpeg';
@@ -320,6 +320,72 @@ const AboutUs = () => {
             {/* Single row of 5 */}
             <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6">
               {specialInvitees.map((member, index) => <PersonCard key={index} name={member.name} role={member.role} photo={member.photo} className="animate-scale-in" />)}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Membership Buttons */}
+      <section id="membership" className="py-16 lg:py-20 bg-bbd-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-4 animate-fade-up">
+              Join Our <span className="text-primary">Community</span>
+            </h2>
+            <p className="text-lg text-muted-foreground animate-fade-up">
+              Choose the membership that aligns with your professional goals
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Life Member */}
+            <div className="bg-white rounded-xl card-shadow p-8 text-center hover-lift transition-smooth animate-scale-in">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <FileText className="w-8 h-8 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold text-secondary mb-4">Life Member</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Join our association as a life member and enjoy lifetime benefits including access to all events, 
+                networking opportunities, and exclusive resources.
+              </p>
+              <Button 
+                size="lg"
+                className="btn-outline hover:shadow-red w-full"
+                asChild
+              >
+                <a 
+                  href="/documents/life-membership.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Become a Life Member
+                </a>
+              </Button>
+            </div>
+
+            {/* Patron Member */}
+            <div className="bg-white rounded-xl card-shadow p-8 text-center hover-lift transition-smooth animate-scale-in">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <FileText className="w-8 h-8 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold text-secondary mb-4">Patron Member</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Support our mission as a patron member and help us create greater impact in the professional 
+                community while enjoying premium benefits.
+              </p>
+              <Button 
+                size="lg"
+                className="btn-outline hover:shadow-red w-full"
+                asChild
+              >
+                <a 
+                  href="/documents/patron-membership.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Become a Patron Member
+                </a>
+              </Button>
             </div>
           </div>
         </div>
