@@ -87,19 +87,19 @@ const officeBarers = [
 }];
 const executiveCommittee = [
   { name: "CA Anil Kumar Mandawewala", role: "Executive Committee", photo: anilImage },
-  { name: "CA Kamal Somani", role: "Executive Committee" },
-  { name: "CA Mahadev Lal Agarwal", role: "Executive Committee" },
+  { name: "CA Kamal Somani", role: "Executive Committee", photo: bbdLogo },
+  { name: "CA Mahadev Lal Agarwal", role: "Executive Committee", photo: bbdLogo },
   { name: "CA Vardhman Chhalani", role: "Executive Committee", photo: vardhmanImage },
   { name: "CA Chandra Bhanu Sinha", role: "Executive Committee", photo: cbsinhaImage },
-  { name: "CA Lalit Kumar Shroff", role: "Executive Committee" },
-  { name: "CA Sandeep Kumar Goyal", role: "Executive Committee" },
-  { name: "CS Ravi Verma", role: "Executive Committee" },
-  { name: "CA Ravi Sureka", role: "Executive Committee" },
-  { name: "CA Gaurav More", role: "Executive Committee" },
+  { name: "CA Lalit Kumar Shroff", role: "Executive Committee", photo: bbdLogo },
+  { name: "CA Sandeep Kumar Goyal", role: "Executive Committee", photo: bbdLogo },
+  { name: "CS Ravi Verma", role: "Executive Committee", photo: bbdLogo },
+  { name: "CA Ravi Sureka", role: "Executive Committee", photo: bbdLogo },
+  { name: "CA Gaurav More", role: "Executive Committee", photo: bbdLogo },
   { name: "CA Sumit Binani", role: "Executive Committee", photo: sumitImage },
-  { name: "CA Nilima Joshi", role: "Executive Committee" },
+  { name: "CA Nilima Joshi", role: "Executive Committee", photo: bbdLogo },
   { name: "CA Ravi Kumar Shah", role: "Executive Committee", photo: ravishahImage },
-  { name: "CA Sanjeev Kumar Agarwal", role: "Executive Committee" },
+  { name: "CA Sanjeev Kumar Agarwal", role: "Executive Committee", photo: bbdLogo },
   { name: "CA Debayan Patra", role: "Executive Committee", photo: debayanImage }
 ];
 const specialInvitees = [
