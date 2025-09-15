@@ -78,7 +78,7 @@ const officeBarers = [
   role: "Joint Treasurer",
   photo: pankajImage
 }, {
-  name: "CA Harsh Satish Udeyshi",
+  name: "CA Harsh Satish Udeshi",
   role: "Convenor",
   photo: harshImage
 }, {
