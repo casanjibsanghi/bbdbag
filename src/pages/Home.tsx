@@ -3,6 +3,7 @@ import HeroSlider from '@/components/HeroSlider';
 import PersonCard from '@/components/PersonCard';
 import { Button } from '@/components/ui/button';
 import { Calendar, MapPin, Clock, Users, ArrowRight, FileText } from 'lucide-react';
+import ScrollAnimation from '@/hooks/useScrollAnimation';
 import profileImage from '@/assets/sanjib-sanghi-high-res.png';
 import akMaheshwariImage from '@/assets/AK-Maheshwari.jpeg';
 import apurvaImage from '@/assets/Apurva.jpeg';
@@ -51,7 +52,7 @@ const Home = () => {
       <section className="py-16 lg:py-24 bg-bbd-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-slide-in">
+            <ScrollAnimation animation="slide-right" delay={200}>
               <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-6">
                 About Our <span className="text-primary">Association</span>
               </h2>
@@ -71,9 +72,9 @@ const Home = () => {
                   Read our journey <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </Button>
-            </div>
+            </ScrollAnimation>
             
-            <div className="animate-scale-in">
+            <ScrollAnimation animation="scale-in" delay={400}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src={communityGatheringImage}
@@ -82,7 +83,7 @@ const Home = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
               </div>
-            </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -90,68 +91,72 @@ const Home = () => {
       {/* Leadership Grid Section */}
       <section className="py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-4 animate-fade-up">
+          <ScrollAnimation animation="fade-up" className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-4">
               Office Bearers <span className="text-primary">(2025-26)</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Meet our dedicated leadership team committed to driving our association's mission forward
             </p>
-          </div>
+          </ScrollAnimation>
 
           {/* Leadership Grid - 3:3:4:4 Layout */}
           <div className="space-y-8">
             {/* Row 1 - 3 members */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 justify-center">
-              {officebearers.slice(0, 3).map((member) => (
-                <PersonCard
-                  key={member.order}
-                  name={member.name}
-                  role={member.role}
-                  photo={member.photo}
-                  className="animate-scale-in"
-                />
-              ))}
-            </div>
+            <ScrollAnimation animation="fade-up-scale" delay={100}>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 justify-center">
+                {officebearers.slice(0, 3).map((member) => (
+                  <PersonCard
+                    key={member.order}
+                    name={member.name}
+                    role={member.role}
+                    photo={member.photo}
+                  />
+                ))}
+              </div>
+            </ScrollAnimation>
 
             {/* Row 2 - 3 members */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 justify-center">
-              {officebearers.slice(3, 6).map((member) => (
-                <PersonCard
-                  key={member.order}
-                  name={member.name}
-                  role={member.role}
-                  photo={member.photo}
-                  className="animate-scale-in"
-                />
-              ))}
-            </div>
+            <ScrollAnimation animation="fade-up-scale" delay={200}>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 justify-center">
+                {officebearers.slice(3, 6).map((member) => (
+                  <PersonCard
+                    key={member.order}
+                    name={member.name}
+                    role={member.role}
+                    photo={member.photo}
+                  />
+                ))}
+              </div>
+            </ScrollAnimation>
 
             {/* Row 3 - 4 members */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {officebearers.slice(6, 10).map((member) => (
-                <PersonCard
-                  key={member.order}
-                  name={member.name}
-                  role={member.role}
-                  photo={member.photo}
-                  className="animate-scale-in"
-                />
-              ))}
-            </div>
+            <ScrollAnimation animation="fade-up-scale" delay={300}>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {officebearers.slice(6, 10).map((member) => (
+                  <PersonCard
+                    key={member.order}
+                    name={member.name}
+                    role={member.role}
+                    photo={member.photo}
+                  />
+                ))}
+              </div>
+            </ScrollAnimation>
 
             {/* Row 4 - 3 members (last row) */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 justify-center">
-              {officebearers.slice(10, 13).map((member) => (
-                <PersonCard
-                  key={member.order}
-                  name={member.name}
-                  role={member.role}
-                  photo={member.photo}
-                  className="animate-scale-in"
-                />
-              ))}
-            </div>
+            <ScrollAnimation animation="fade-up-scale" delay={400}>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 justify-center">
+                {officebearers.slice(10, 13).map((member) => (
+                  <PersonCard
+                    key={member.order}
+                    name={member.name}
+                    role={member.role}
+                    photo={member.photo}
+                  />
+                ))}
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -161,7 +166,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Event Flyer */}
-            <div className="animate-scale-in">
+            <ScrollAnimation animation="scale-in" delay={200}>
                 <div className="relative max-w-md mx-auto">
                   <img
                     src={agmFlyer}
@@ -169,10 +174,10 @@ const Home = () => {
                     className="w-full rounded-xl shadow-lg"
                   />
               </div>
-            </div>
+            </ScrollAnimation>
 
             {/* Event Details */}
-            <div className="animate-slide-in">
+            <ScrollAnimation animation="slide-left" delay={400}>
               <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-6">
                 Upcoming <span className="text-primary">Event</span>
               </h2>
@@ -214,7 +219,7 @@ const Home = () => {
                   Register Now
                 </a>
               </Button>
-            </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -222,43 +227,46 @@ const Home = () => {
       {/* Membership Buttons */}
       <section id="membership" className="py-16 lg:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-4 animate-fade-up">
+          <ScrollAnimation animation="fade-up" className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-4">
               Join Our <span className="text-primary">Community</span>
             </h2>
-            <p className="text-lg text-muted-foreground animate-fade-up">
+            <p className="text-lg text-muted-foreground">
               Choose the membership that aligns with your professional goals
             </p>
-          </div>
+          </ScrollAnimation>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Life Member */}
-            <div className="bg-white rounded-xl card-shadow p-8 text-center hover-lift transition-smooth animate-scale-in">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <FileText className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-2xl font-bold text-secondary mb-4">Life Member</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Join our association as a life member and enjoy lifetime benefits including access to all events, 
-                networking opportunities, and exclusive resources.
-              </p>
-              <Button 
-                size="lg"
-                className="btn-outline hover:shadow-red w-full"
-                asChild
-              >
-                <a 
-                  href="/documents/life-membership.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+            <ScrollAnimation animation="slide-right" delay={200}>
+              <div className="bg-white rounded-xl card-shadow p-8 text-center hover-lift transition-smooth">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <FileText className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold text-secondary mb-4">Life Member</h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Join our association as a life member and enjoy lifetime benefits including access to all events, 
+                  networking opportunities, and exclusive resources.
+                </p>
+                <Button 
+                  size="lg"
+                  className="btn-outline hover:shadow-red w-full"
+                  asChild
                 >
-                  Become a Life Member
-                </a>
-              </Button>
-            </div>
+                  <a 
+                    href="/documents/life-membership.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    Become a Life Member
+                  </a>
+                </Button>
+              </div>
+            </ScrollAnimation>
 
             {/* Patron Member */}
-            <div className="bg-white rounded-xl card-shadow p-8 text-center hover-lift transition-smooth animate-scale-in">
+            <ScrollAnimation animation="slide-left" delay={400}>
+              <div className="bg-white rounded-xl card-shadow p-8 text-center hover-lift transition-smooth">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <FileText className="w-8 h-8 text-primary" />
               </div>
@@ -280,7 +288,8 @@ const Home = () => {
                   Become a Patron Member
                 </a>
               </Button>
-            </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>

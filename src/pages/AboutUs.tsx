@@ -2,6 +2,7 @@ import React from 'react';
 import PersonCard from '@/components/PersonCard';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Calendar, Target, Users, Award, Lightbulb, Heart, FileText } from 'lucide-react';
+import ScrollAnimation from '@/hooks/useScrollAnimation';
 import sanjibImage from '@/assets/sanjib-sanghi-high-res.png';
 import akMaheshwariImage from '@/assets/AK-Maheshwari.jpeg';
 import apurvaImage from '@/assets/Apurva.jpeg';
@@ -194,14 +195,16 @@ const AboutUs = () => {
       {/* Hero Header */}
       <section className="py-16 lg:py-24 bg-gradient-to-br from-primary/5 to-primary/10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-secondary mb-6 animate-fade-up">
-            Our <span className="text-primary">Journey</span>
-          </h1>
-          <p className="text-xl text-muted-foreground animate-fade-up" style={{
-          animationDelay: '200ms'
-        }}>
-            Discover the story behind BBD Bag Professional Association and our commitment to excellence
-          </p>
+          <ScrollAnimation animation="fade-up">
+            <h1 className="text-4xl lg:text-5xl font-bold text-secondary mb-6">
+              Our <span className="text-primary">Journey</span>
+            </h1>
+          </ScrollAnimation>
+          <ScrollAnimation animation="fade-up" delay={200}>
+            <p className="text-xl text-muted-foreground">
+              Discover the story behind BBD Bag Professional Association and our commitment to excellence
+            </p>
+          </ScrollAnimation>
         </div>
       </section>
 
@@ -210,7 +213,7 @@ const AboutUs = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             {/* Origin */}
-            <div className="mb-12 animate-slide-in">
+            <ScrollAnimation animation="fade-up-scale" className="mb-12">
               <h2 className="text-3xl font-bold text-secondary mb-6 flex items-center">
                 <Target className="w-8 h-8 mr-3 text-primary" />
                 The Journey of BBD Bag Chartered Accountants Study Circle
@@ -234,7 +237,7 @@ const AboutUs = () => {
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Now with the change of time young and experienced members have joined and the Study Circle has been expanded with a strength of more than 250 members. The Study Circle was also the winner in the recently conducted Inter Study Circle Indoor Cricket Competition 2020-21.
               </p>
-            </div>
+            </ScrollAnimation>
 
             {/* Purpose */}
             
@@ -256,71 +259,83 @@ const AboutUs = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Office Bearers */}
           <div className="mb-16">
-            <div className="text-center mb-12">
+            <ScrollAnimation animation="fade-up" className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-4">
                 Office Bearers <span className="text-primary">(2025-26)</span>
               </h2>
               <p className="text-lg text-muted-foreground">
                 Our elected leadership team driving the association's vision forward
               </p>
-            </div>
+            </ScrollAnimation>
 
             {/* Same 3:3:4:3 layout as Home */}
             <div className="space-y-8">
               {/* Row 1 - 3 members */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                {officeBarers.slice(0, 3).map((member, index) => <PersonCard key={index} name={member.name} role={member.role} photo={member.photo} className="animate-scale-in" />)}
-              </div>
+              <ScrollAnimation animation="fade-up-scale" delay={100}>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                  {officeBarers.slice(0, 3).map((member, index) => <PersonCard key={index} name={member.name} role={member.role} photo={member.photo} />)}
+                </div>
+              </ScrollAnimation>
 
               {/* Row 2 - 3 members */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                {officeBarers.slice(3, 6).map((member, index) => <PersonCard key={index} name={member.name} role={member.role} photo={member.photo} className="animate-scale-in" />)}
-              </div>
+              <ScrollAnimation animation="fade-up-scale" delay={200}>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                  {officeBarers.slice(3, 6).map((member, index) => <PersonCard key={index} name={member.name} role={member.role} photo={member.photo} />)}
+                </div>
+              </ScrollAnimation>
 
               {/* Row 3 - 4 members */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                {officeBarers.slice(6, 10).map((member, index) => <PersonCard key={index} name={member.name} role={member.role} photo={member.photo} className="animate-scale-in" />)}
-              </div>
+              <ScrollAnimation animation="fade-up-scale" delay={300}>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {officeBarers.slice(6, 10).map((member, index) => <PersonCard key={index} name={member.name} role={member.role} photo={member.photo} />)}
+                </div>
+              </ScrollAnimation>
 
               {/* Row 4 - 3 members */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                {officeBarers.slice(10, 13).map((member, index) => <PersonCard key={index} name={member.name} role={member.role} photo={member.photo} className="animate-scale-in" />)}
-              </div>
+              <ScrollAnimation animation="fade-up-scale" delay={400}>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                  {officeBarers.slice(10, 13).map((member, index) => <PersonCard key={index} name={member.name} role={member.role} photo={member.photo} />)}
+                </div>
+              </ScrollAnimation>
             </div>
           </div>
 
           {/* Executive Committee */}
           <div className="mb-16">
-            <div className="text-center mb-12">
+            <ScrollAnimation animation="fade-up" className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-4">
                 Executive <span className="text-primary">Committee</span>
               </h2>
               <p className="text-lg text-muted-foreground">
                 15 dedicated members supporting our association's operations
               </p>
-            </div>
+            </ScrollAnimation>
 
             {/* 5 per row, 3 rows */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6">
-              {executiveCommittee.map((member, index) => <PersonCard key={index} name={member.name} role={member.role} photo={member.photo} className="animate-scale-in" />)}
-            </div>
+            <ScrollAnimation animation="fade-up-scale" delay={200}>
+              <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+                {executiveCommittee.map((member, index) => <PersonCard key={index} name={member.name} role={member.role} photo={member.photo} />)}
+              </div>
+            </ScrollAnimation>
           </div>
 
           {/* Special Invitees */}
           <div className="mb-16">
-            <div className="text-center mb-12">
+            <ScrollAnimation animation="fade-up" className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-4">
                 Special <span className="text-primary">Invitees</span>
               </h2>
               <p className="text-lg text-muted-foreground">
                 Distinguished personalities honored by our association
               </p>
-            </div>
+            </ScrollAnimation>
 
             {/* Single row of 5 */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6">
-              {specialInvitees.map((member, index) => <PersonCard key={index} name={member.name} role={member.role} photo={member.photo} className="animate-scale-in" />)}
-            </div>
+            <ScrollAnimation animation="fade-up-scale" delay={200}>
+              <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+                {specialInvitees.map((member, index) => <PersonCard key={index} name={member.name} role={member.role} photo={member.photo} />)}
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -328,35 +343,38 @@ const AboutUs = () => {
       {/* Membership Buttons */}
       <section id="membership" className="py-16 lg:py-20 bg-bbd-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-4 animate-fade-up">
+          <ScrollAnimation animation="fade-up" className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-4">
               Join Our <span className="text-primary">Community</span>
             </h2>
-            <p className="text-lg text-muted-foreground animate-fade-up">
+            <p className="text-lg text-muted-foreground">
               Choose the membership that aligns with your professional goals
             </p>
-          </div>
+          </ScrollAnimation>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Life Member */}
-            <div className="bg-white rounded-xl card-shadow p-8 text-center hover-lift transition-smooth animate-scale-in">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <FileText className="w-8 h-8 text-primary" />
+            <ScrollAnimation animation="slide-right" delay={200}>
+              <div className="bg-white rounded-xl card-shadow p-8 text-center hover-lift transition-smooth">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <FileText className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold text-secondary mb-4">Life Member</h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Join our association as a life member and enjoy lifetime benefits including access to all events, 
+                  networking opportunities, and exclusive resources.
+                </p>
+                <Button size="lg" className="btn-outline hover:shadow-red w-full" asChild>
+                  <a href="/documents/life-membership.pdf" target="_blank" rel="noopener noreferrer">
+                    Become a Life Member
+                  </a>
+                </Button>
               </div>
-              <h3 className="text-2xl font-bold text-secondary mb-4">Life Member</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Join our association as a life member and enjoy lifetime benefits including access to all events, 
-                networking opportunities, and exclusive resources.
-              </p>
-              <Button size="lg" className="btn-outline hover:shadow-red w-full" asChild>
-                <a href="/documents/life-membership.pdf" target="_blank" rel="noopener noreferrer">
-                  Become a Life Member
-                </a>
-              </Button>
-            </div>
+            </ScrollAnimation>
 
             {/* Patron Member */}
-            <div className="bg-white rounded-xl card-shadow p-8 text-center hover-lift transition-smooth animate-scale-in">
+            <ScrollAnimation animation="slide-left" delay={400}>
+              <div className="bg-white rounded-xl card-shadow p-8 text-center hover-lift transition-smooth">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <FileText className="w-8 h-8 text-primary" />
               </div>
@@ -370,7 +388,8 @@ const AboutUs = () => {
                   Become a Patron Member
                 </a>
               </Button>
-            </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -378,15 +397,11 @@ const AboutUs = () => {
       {/* CTA Band */}
       <section className="py-16 lg:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="animate-fade-up">
+          <ScrollAnimation animation="fade-up-scale">
             <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-6">
               Participate. Learn. <span className="text-primary">Lead.</span>
             </h2>
-            
-            <Button size="lg" className="btn-primary text-lg px-8 py-3 rounded-xl font-semibold hover:shadow-red" asChild>
-              
-            </Button>
-          </div>
+          </ScrollAnimation>
         </div>
       </section>
     </div>;

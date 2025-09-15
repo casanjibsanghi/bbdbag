@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { MapPin, Phone, Mail, Copy, Check, FileText, Linkedin, Facebook, Twitter, CreditCard, Building, Hash } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import ScrollAnimation from '@/hooks/useScrollAnimation';
 
 const Connect = () => {
   const [copiedField, setCopiedField] = useState<string | null>(null);
@@ -83,12 +84,16 @@ IFSC: ${bankDetails.ifsc}
       {/* Header */}
       <section className="py-16 lg:py-24 bg-gradient-to-br from-primary/5 to-primary/10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-secondary mb-6 animate-fade-up">
-            Connect <span className="text-primary">With Us</span>
-          </h1>
-          <p className="text-xl text-muted-foreground animate-fade-up" style={{ animationDelay: '200ms' }}>
-            Get in touch, join our community, or visit us in person
-          </p>
+          <ScrollAnimation animation="fade-up">
+            <h1 className="text-4xl lg:text-5xl font-bold text-secondary mb-6">
+              Connect <span className="text-primary">With Us</span>
+            </h1>
+          </ScrollAnimation>
+          <ScrollAnimation animation="fade-up" delay={200}>
+            <p className="text-xl text-muted-foreground">
+              Get in touch, join our community, or visit us in person
+            </p>
+          </ScrollAnimation>
         </div>
       </section>
 
@@ -97,7 +102,7 @@ IFSC: ${bankDetails.ifsc}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Map */}
-            <div className="animate-scale-in">
+            <ScrollAnimation animation="scale-in" delay={200}>
               <div className="bg-white rounded-xl card-shadow overflow-hidden">
                 <div className="h-80 bg-gradient-to-br from-primary/10 to-primary/5 relative">
                   <iframe
@@ -121,10 +126,10 @@ IFSC: ${bankDetails.ifsc}
                   </div>
                 </div>
               </div>
-            </div>
+            </ScrollAnimation>
 
             {/* Contact Information */}
-            <div className="animate-slide-in space-y-8">
+            <ScrollAnimation animation="slide-left" delay={400} className="space-y-8">
               <div>
                 <h2 className="text-2xl font-bold text-secondary mb-6">Get in Touch</h2>
                 
@@ -235,7 +240,7 @@ IFSC: ${bankDetails.ifsc}
                   </div>
                 </div>
               </div>
-            </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -243,43 +248,46 @@ IFSC: ${bankDetails.ifsc}
       {/* Membership Buttons */}
       <section id="membership" className="py-16 lg:py-20 bg-bbd-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-4 animate-fade-up">
+          <ScrollAnimation animation="fade-up" className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-4">
               Join Our <span className="text-primary">Community</span>
             </h2>
-            <p className="text-lg text-muted-foreground animate-fade-up">
+            <p className="text-lg text-muted-foreground">
               Choose the membership that aligns with your professional goals
             </p>
-          </div>
+          </ScrollAnimation>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Life Member */}
-            <div className="bg-white rounded-xl card-shadow p-8 text-center hover-lift transition-smooth animate-scale-in">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <FileText className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-2xl font-bold text-secondary mb-4">Life Member</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Join our association as a life member and enjoy lifetime benefits including access to all events, 
-                networking opportunities, and exclusive resources.
-              </p>
-              <Button 
-                size="lg"
-                className="btn-outline hover:shadow-red w-full"
-                asChild
-              >
-                <a 
-                  href="/documents/life-membership.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+            <ScrollAnimation animation="slide-right" delay={200}>
+              <div className="bg-white rounded-xl card-shadow p-8 text-center hover-lift transition-smooth">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <FileText className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold text-secondary mb-4">Life Member</h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Join our association as a life member and enjoy lifetime benefits including access to all events, 
+                  networking opportunities, and exclusive resources.
+                </p>
+                <Button 
+                  size="lg"
+                  className="btn-outline hover:shadow-red w-full"
+                  asChild
                 >
-                  Become a Life Member
-                </a>
-              </Button>
-            </div>
+                  <a 
+                    href="/documents/life-membership.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    Become a Life Member
+                  </a>
+                </Button>
+              </div>
+            </ScrollAnimation>
 
             {/* Patron Member */}
-            <div className="bg-white rounded-xl card-shadow p-8 text-center hover-lift transition-smooth animate-scale-in">
+            <ScrollAnimation animation="slide-left" delay={400}>
+              <div className="bg-white rounded-xl card-shadow p-8 text-center hover-lift transition-smooth">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <FileText className="w-8 h-8 text-primary" />
               </div>
@@ -301,7 +309,8 @@ IFSC: ${bankDetails.ifsc}
                   Become a Patron Member
                 </a>
               </Button>
-            </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -309,32 +318,33 @@ IFSC: ${bankDetails.ifsc}
       {/* Social Media */}
       <section className="py-16 lg:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-4 animate-fade-up">
+          <ScrollAnimation animation="fade-up" className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-4">
               Follow Us <span className="text-primary">Online</span>
             </h2>
-            <p className="text-lg text-muted-foreground animate-fade-up">
+            <p className="text-lg text-muted-foreground">
               Stay connected and updated with our latest activities
             </p>
-          </div>
+          </ScrollAnimation>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {socialLinks.map(({ Icon, href, label, description }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group bg-bbd-gray-50 rounded-xl p-8 text-center hover:bg-primary hover:text-white transition-all duration-300 hover-lift animate-scale-in"
-              >
-                <Icon className="w-12 h-12 mx-auto mb-4 text-primary group-hover:text-white transition-colors duration-300" />
-                <h3 className="text-xl font-bold text-secondary group-hover:text-white mb-2 transition-colors duration-300">
-                  {label}
-                </h3>
-                <p className="text-muted-foreground group-hover:text-white/90 transition-colors duration-300">
-                  {description}
-                </p>
-              </a>
+            {socialLinks.map(({ Icon, href, label, description }, index) => (
+              <ScrollAnimation key={label} animation="fade-up-scale" delay={100 * (index + 1)}>
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-bbd-gray-50 rounded-xl p-8 text-center hover:bg-primary hover:text-white transition-all duration-300 hover-lift block"
+                >
+                  <Icon className="w-12 h-12 mx-auto mb-4 text-primary group-hover:text-white transition-colors duration-300" />
+                  <h3 className="text-xl font-bold text-secondary group-hover:text-white mb-2 transition-colors duration-300">
+                    {label}
+                  </h3>
+                  <p className="text-muted-foreground group-hover:text-white/90 transition-colors duration-300">
+                    {description}
+                  </p>
+                </a>
+              </ScrollAnimation>
             ))}
           </div>
         </div>
