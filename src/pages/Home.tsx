@@ -203,7 +203,7 @@ const Home = () => {
 
               <Button 
                 size="lg"
-                className="btn-primary text-lg px-8 py-3 rounded-xl font-semibold hover:shadow-red"
+                className="btn-primary text-lg px-8 py-3 rounded-xl font-semibold hover:shadow-red hidden"
                 asChild
               >
                 <a 
