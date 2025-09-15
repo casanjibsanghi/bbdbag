@@ -60,7 +60,7 @@ const officeBarers = [
 }, {
   name: "CA Pramod Agarwal",
   role: "Secretary",
-  photo: pramodImage
+  photo: bbdLogo
 }, {
   name: "CA Apurva Maheshwari",
   role: "Joint Secretary",
