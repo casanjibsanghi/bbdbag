@@ -3,11 +3,11 @@ import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 // Import hero images
-import heroSlide1 from '@/assets/hero-slide-1.jpg';
-import heroSlide2 from '@/assets/hero-slide-2.jpg';
-import heroSlide3 from '@/assets/hero-slide-3.jpg';
-import heroSlide4 from '@/assets/hero-slide-4.jpg';
-import heroSlide5 from '@/assets/hero-slide-5.jpg';
+import heroSlide1 from '@/assets/hero-slide-1.png';
+import heroSlide2 from '@/assets/hero-slide-2.png';
+import heroSlide3 from '@/assets/hero-slide-3.png';
+import heroSlide4 from '@/assets/hero-slide-4.png';
+import heroSlide5 from '@/assets/hero-slide-5.png';
 const slides = [{
   image: heroSlide1,
   title: 'Study & Knowledge',
