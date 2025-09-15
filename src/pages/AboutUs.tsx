@@ -348,16 +348,8 @@ const AboutUs = () => {
                 Join our association as a life member and enjoy lifetime benefits including access to all events, 
                 networking opportunities, and exclusive resources.
               </p>
-              <Button 
-                size="lg"
-                className="btn-outline hover:shadow-red w-full"
-                asChild
-              >
-                <a 
-                  href="/documents/life-membership.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
+              <Button size="lg" className="btn-outline hover:shadow-red w-full" asChild>
+                <a href="/documents/life-membership.pdf" target="_blank" rel="noopener noreferrer">
                   Become a Life Member
                 </a>
               </Button>
@@ -373,16 +365,8 @@ const AboutUs = () => {
                 Support our mission as a patron member and help us create greater impact in the professional 
                 community while enjoying premium benefits.
               </p>
-              <Button 
-                size="lg"
-                className="btn-outline hover:shadow-red w-full"
-                asChild
-              >
-                <a 
-                  href="/documents/patron-membership.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
+              <Button size="lg" className="btn-outline hover:shadow-red w-full" asChild>
+                <a href="/documents/patron-membership.pdf" target="_blank" rel="noopener noreferrer">
                   Become a Patron Member
                 </a>
               </Button>
@@ -402,9 +386,7 @@ const AboutUs = () => {
               Join our vibrant community of professionals and be part of something bigger than yourself
             </p>
             <Button size="lg" className="btn-primary text-lg px-8 py-3 rounded-xl font-semibold hover:shadow-red" asChild>
-              <a href="/connect#membership">
-                Become a Member <ArrowRight className="ml-2 w-5 h-5" />
-              </a>
+              
             </Button>
           </div>
         </div>
