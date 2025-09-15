@@ -215,21 +215,24 @@ const AboutUs = () => {
                 <Target className="w-8 h-8 mr-3 text-primary" />
                 The Journey of BBD Bag Chartered Accountants Study Circle
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">B.B.D. BAG CHARTERED ACCOUNTANTS STUDY CIRCLE-EIRC was founded as a study circle with EIRC of Institute of Chartered Accountants of India on 8th December 2003 by a group of six practicing Chartered Accountants of Kolkata who were already running a study circle since 1984 in the name of Saturday Study Circle which is still running.
-
-            </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">This epistemophilic group has been continuously meeting every Saturday of the week for 3 to 4 hours in the afternoon to update their professional and educational inquisitiveness by discussing current topics and happenings in the knowledge domain of CA profession. The schedule of the Saturday meeting has been divided into various segments i.e. , Prayer, Academic / Creative discussions, Query-Answer, Flashes and reporting from CA, BCAJ, CS Journal, ITR, ITD, Taxmann, etc., Speech by one member etc. These meetings are held with undeviating rules towards attendance, minutes, written materials and maintaining time with penalty for late attendance, and non-completion of the designated task.
-
-            </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">We feel proud to state that the solution or decision or summary arrived at from the interaction and discussions is of a fine and real nectar and stood the test of all challenges of the profession. We also hold a very close door annual programme to introspect ourselves where the Senior member of the Profession is invited to guide and share their experiences. This practice has benefitted a lot to all and has become a part and parcel of our routine.
-
-            </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">Our past president Late Sri Rahul Roy graced with his presence one of our annual meeting during his presidentship of the Institute and appreciated a lot about our concept and had mentioned about the study circle concept in his presidential address in the CA Journal and thereafter our Institute had adopted and started the same as a continuous professional and educational program. Senior Members of the Profession like Sri N K Poddar, Sri M L Singhee, Sri R K Agarwal, Sri Dipankar Chatterjee, Sri Amitabh Kothari, Sri Rahul Roy, Advocate Sri Sajjan Tulsiyan, Advocate Sri Paras Kochar and many more had blessed the circle from time to time. It has been our endeavour to benefit the CA profession and fraternity.
-
-            </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                B.B.D. BAG CHARTERED ACCOUNTANTS STUDY CIRCLE-EIRC was founded as a study circle with EIRC of Institute of Chartered Accountants of India on 8th December 2003 by a group of six practicing Chartered Accountants of Kolkata who were already running a study circle since 1984 in the name of Saturday Study Circle which is still running.
+              </p>
+              
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                This epistemophilic group has been continuously meeting every Saturday of the week for 3 to 4 hours in the afternoon to update their professional and educational inquisitiveness by discussing current topics and happenings in the knowledge domain of CA profession. The schedule of the Saturday meeting has been divided into various segments i.e. , Prayer, Academic / Creative discussions, Query-Answer, Flashes and reporting from CA, BCAJ, CS Journal, ITR, ITD, Taxmann, etc., Speech by one member etc. These meetings are held with undeviating rules towards attendance, minutes, written materials and maintaining time with penalty for late attendance, and non-completion of the designated task.
+              </p>
+              
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                We feel proud to state that the solution or decision or summary arrived at from the interaction and discussions is of a fine and real nectar and stood the test of all challenges of the profession. We also hold a very close door annual programme to introspect ourselves where the Senior member of the Profession is invited to guide and share their experiences. This practice has benefitted a lot to all and has become a part and parcel of our routine.
+              </p>
+              
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Our past president Late Sri Rahul Roy graced with his presence one of our annual meeting during his presidentship of the Institute and appreciated a lot about our concept and had mentioned about the study circle concept in his presidential address in the CA Journal and thereafter our Institute had adopted and started the same as a continuous professional and educational program. Senior Members of the Profession like Sri N K Poddar, Sri M L Singhee, Sri R K Agarwal, Sri Dipankar Chatterjee, Sri Amitabh Kothari, Sri Rahul Roy, Advocate Sri Sajjan Tulsiyan, Advocate Sri Paras Kochar and many more had blessed the circle from time to time. It has been our endeavour to benefit the CA profession and fraternity.
+              </p>
+              
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Now with the change of time young and experienced members have joined and the Study Circle has been expanded with a strength of more than 250 members. The Study Circle was also the winner in the recently conducted Inter Study Circle Indoor Cricket Competition 2020-21.
-             
               </p>
             </div>
 
