@@ -13,6 +13,10 @@ const Footer = () => {
   }, {
     name: 'Connect',
     path: '/connect'
+  }, {
+    name: 'Gallery',
+    path: 'https://drive.google.com/drive/folders/1A60rtz_80v4ekdu7Td6tZICGzI9bRoX1?usp=sharing',
+    external: true
   }];
   const socialLinks = [{
     Icon: Linkedin,
@@ -60,9 +64,27 @@ const Footer = () => {
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">Quick Links</h4>
               <nav className="flex flex-col space-y-2" aria-label="Footer navigation">
-                {quickLinks.map(link => <Link key={link.path} to={link.path} className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium">
-                    {link.name}
-                  </Link>)}
+                {quickLinks.map(link => 
+                  link.external ? (
+                    <a 
+                      key={link.path} 
+                      href={link.path} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium"
+                    >
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link 
+                      key={link.path} 
+                      to={link.path} 
+                      className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium"
+                    >
+                      {link.name}
+                    </Link>
+                  )
+                )}
               </nav>
             </div>
 
