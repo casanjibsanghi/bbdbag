@@ -25,7 +25,7 @@ const Navigation = () => {
     path: '/connect'
   }, {
     name: 'Gallery',
-    path: 'https://drive.google.com/drive/folders/15ddREokFCVZwfjxdPXhMvo2gAWlQM3S_?usp=sharing',
+    path: 'https://drive.google.com/drive/folders/1A60rtz_80v4ekdu7Td6tZICGzI9bRoX1?usp=sharing',
     external: true
   }];
   const socialLinks = [{
