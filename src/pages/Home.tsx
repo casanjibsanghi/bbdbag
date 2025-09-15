@@ -120,12 +120,24 @@ const Home = () => {
                 About Our <span className="text-primary">Association</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                The BBD Bag Professional Association serves as a dynamic multidisciplinary forum 
-                bringing together professionals from diverse fields across Kolkata and beyond. 
-                We are committed to fostering professional excellence, continuous learning, and 
-                meaningful community engagement. Through our initiatives, we create opportunities 
-                for knowledge sharing, networking, and collaborative growth that benefit both 
-                individual members and the broader professional community.
+                BBD Bag Professional Association is a vibrant professional association 
+                with it’s roots back in 2003 as the BBD Bag Chartered Accountants Study Circle 
+                of EIRC of ICAI (with roots dating back to 1984’s Saturday Study Circle).
+                
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                With several Chartered Accountants, Company Secretaries, Advocates and 
+                other Finance Professionals, our association is dedicated to Continuous Learning, 
+                Collaboration and Professional Excellence. The association engages in structured 
+                discussions on taxation, audit, corporate law, and emerging trends — blending 
+                academic rigor with practical insights. 
+                
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                With a tradition of discipline, peer learning, and guidance from senior stalwarts 
+                of the profession realm, BBD Bag Professional Association has become a trusted 
+                platform for knowledge sharing, networking, and shaping thought leadership. 
+                
               </p>
               <Button 
                 asChild
