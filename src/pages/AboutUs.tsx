@@ -382,9 +382,7 @@ const AboutUs = () => {
             <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-6">
               Participate. Learn. <span className="text-primary">Lead.</span>
             </h2>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Join our vibrant community of professionals and be part of something bigger than yourself
-            </p>
+            
             <Button size="lg" className="btn-primary text-lg px-8 py-3 rounded-xl font-semibold hover:shadow-red" asChild>
               
             </Button>
