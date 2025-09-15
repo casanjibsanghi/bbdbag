@@ -38,7 +38,7 @@ const officebearers = [
   { name: "CA Sanjay Jhajharia", role: "Treasurer", order: 10, photo: sanjayImage },
   // Row 4 (4 members)
   { name: "CA Pankaj Kumar Verma", role: "Joint Treasurer", order: 11, photo: pankajImage },
-  { name: "CA Harsh Satish Udeyshi", role: "Convenor", order: 12, photo: harshImage },
+  { name: "CA Harsh Satish Udeshi", role: "Convenor", order: 12, photo: harshImage },
   { name: "CA Muskan Sethia", role: "Dy. Convenor", order: 13, photo: muskanImage }
 ];
 
