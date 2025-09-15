@@ -18,6 +18,7 @@ import pankajImage from '@/assets/pankaj-verma.jpg';
 import harshImage from '@/assets/Harsh.jpg';
 import muskanImage from '@/assets/Muskan.jpeg';
 import pramodImage from '@/assets/pramod.jpeg';
+import communityGatheringImage from '@/assets/community-gathering.jpg';
 
 // Mock data for leadership (Office Bearers 2025-26)
 const officebearers = [
@@ -75,8 +76,8 @@ const Home = () => {
             <div className="animate-scale-in">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/placeholder.svg"
-                  alt="BBD Bag Professional Association community gathering"
+                  src={communityGatheringImage}
+                  alt="BBD Bag Professional Association meeting with members and leadership team"
                   className="w-full h-80 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
