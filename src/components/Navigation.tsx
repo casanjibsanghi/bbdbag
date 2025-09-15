@@ -23,6 +23,10 @@ const Navigation = () => {
   }, {
     name: 'Connect',
     path: '/connect'
+  }, {
+    name: 'Gallery',
+    path: 'https://drive.google.com/drive/folders/15ddREokFCVZwfjxdPXhMvo2gAWlQM3S_?usp=sharing',
+    external: true
   }];
   const socialLinks = [{
     Icon: Linkedin,
@@ -61,9 +65,27 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            {navLinks.map(link => <Link key={link.path} to={link.path} className={`text-sm font-medium transition-colors duration-200 hover:text-primary ${location.pathname === link.path ? 'text-primary' : 'text-secondary'}`}>
-                {link.name}
-              </Link>)}
+            {navLinks.map(link => 
+              link.external ? (
+                <a 
+                  key={link.path} 
+                  href={link.path} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium transition-colors duration-200 hover:text-primary text-secondary"
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <Link 
+                  key={link.path} 
+                  to={link.path} 
+                  className={`text-sm font-medium transition-colors duration-200 hover:text-primary ${location.pathname === link.path ? 'text-primary' : 'text-secondary'}`}
+                >
+                  {link.name}
+                </Link>
+              )
+            )}
             
             {/* Desktop Social Icons */}
             <div className="flex items-center space-x-3 ml-6 pl-6 border-l border-gray-200">
@@ -87,9 +109,29 @@ const Navigation = () => {
       {/* Mobile Menu */}
       <div className={`lg:hidden transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
         <div className="bg-white border-t border-gray-200 px-4 py-6 space-y-4">
-          {navLinks.map(link => <Link key={link.path} to={link.path} className={`block py-3 text-lg font-medium transition-colors duration-200 ${location.pathname === link.path ? 'text-primary' : 'text-secondary hover:text-primary'}`} onClick={() => setIsMenuOpen(false)}>
-              {link.name}
-            </Link>)}
+          {navLinks.map(link => 
+            link.external ? (
+              <a 
+                key={link.path} 
+                href={link.path} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block py-3 text-lg font-medium transition-colors duration-200 text-secondary hover:text-primary"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.name}
+              </a>
+            ) : (
+              <Link 
+                key={link.path} 
+                to={link.path} 
+                className={`block py-3 text-lg font-medium transition-colors duration-200 ${location.pathname === link.path ? 'text-primary' : 'text-secondary hover:text-primary'}`} 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.name}
+              </Link>
+            )
+          )}
           
           {/* Mobile Social Icons */}
           <div className="flex items-center space-x-4 pt-4 border-t border-gray-100">
