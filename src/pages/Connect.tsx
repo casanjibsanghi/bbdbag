@@ -101,7 +101,7 @@ IFSC: ${bankDetails.ifsc}
               <div className="bg-white rounded-xl card-shadow overflow-hidden">
                 <div className="h-80 bg-gradient-to-br from-primary/10 to-primary/5 relative">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.1!2d88.347!3d22.565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDMzJzU0LjAiTiA4OMKwMjAnNDkuMiJF!5e0!3m2!1sen!2sin!4v1234567890"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.1!2d88.34769!3d22.5646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277a89abf8c1b%3A0xa3b69d286e0c5e6d!2sCommerce%20House%2C%202A%2C%20Ganesh%20Chandra%20Ave%2C%20Bowbazar%2C%20Kolkata%2C%20West%20Bengal%20700001!5e0!3m2!1sen!2sin!4v1635789012345"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
