@@ -20,6 +20,7 @@ import harshImage from '@/assets/Harsh.jpg';
 import muskanImage from '@/assets/Muskan.jpeg';
 import pramodImage from '@/assets/pramod.jpeg';
 import communityGatheringImage from '@/assets/community-gathering.jpg';
+import pramodImage from '@/assets/Pramod-Agarwal.jpeg';
 
 // Mock data for leadership (Office Bearers 2025-26)
 const officebearers = [
@@ -32,7 +33,7 @@ const officebearers = [
   { name: "CA Rajendra Kumar Vyas", role: "Past President", order: 5, photo: rkVyasImage },
   { name: "CA Ashoke Kumar Maheshwari", role: "Past President", order: 6, photo: akMaheshwariImage },
   // Row 3 (4 members)
-  { name: "CA Pramod Kumar Agarwal", role: "Secretary", order: 7, photo: bbdLogo },
+  { name: "CA Pramod Kumar Agarwal", role: "Secretary", order: 7, photo: pramodImage },
   { name: "CA Apurva Maheshwari", role: "Joint Secretary", order: 8, photo: apurvaImage },
   { name: "Mr. Srigoppal Vyas", role: "Joint Secretary", order: 9, photo: srigoppalImage },
   { name: "CA Sanjay Jhajharia", role: "Treasurer", order: 10, photo: sanjayImage },
