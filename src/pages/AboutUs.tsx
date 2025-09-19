@@ -58,7 +58,7 @@ const officeBarers = [
   role: "Past President",
   photo: akMaheshwariImage
 }, {
-  name: "CA Pramod Agarwal",
+  name: "CA Pramod Kumar Agarwal",
   role: "Secretary",
   photo: bbdLogo
 }, {
