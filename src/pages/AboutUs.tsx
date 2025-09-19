@@ -35,6 +35,7 @@ import lalitImage from '@/assets/Lalit-Shroff.jpeg';
 import kamalImage from '@/assets/Kamal-Somani.jpeg';
 import gauravImage from '@/assets/Gaurav-More.jpeg';
 import sanjeevImage from '@/assets/Sanjeev-Agarwal.jpeg';
+import pramodImage from '@/assets/Pramod-Agarwal.jpeg';
 
 // Mock data for different member categories
 const officeBarers = [
@@ -66,7 +67,7 @@ const officeBarers = [
 }, {
   name: "CA Pramod Kumar Agarwal",
   role: "Secretary",
-  photo: bbdLogo
+  photo: pramodImage
 }, {
   name: "CA Apurva Maheshwari",
   role: "Joint Secretary",
