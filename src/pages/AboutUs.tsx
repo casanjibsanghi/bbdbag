@@ -34,6 +34,7 @@ import mahadevImage from '@/assets/Mahadev-Agarwal.jpeg';
 import lalitImage from '@/assets/Lalit-Shroff.jpeg';
 import kamalImage from '@/assets/Kamal-Somani.jpeg';
 import gauravImage from '@/assets/Gaurav-More.jpeg';
+import sanjeevImage from '@/assets/Sanjeev-Agarwal.jpeg';
 
 // Mock data for different member categories
 const officeBarers = [
@@ -146,7 +147,7 @@ const executiveCommittee = [{
 }, {
   name: "CA Sanjeev Kumar Agarwal",
   role: "Executive Committee",
-  photo: bbdLogo
+  photo: sanjeevImage
 }, {
   name: "CA Debayan Patra",
   role: "Executive Committee",
