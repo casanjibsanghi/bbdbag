@@ -37,7 +37,7 @@ import gauravImage from '@/assets/Gaurav-More.jpeg';
 import sanjeevImage from '@/assets/Sanjeev-Agarwal.jpeg';
 import pramodImage from '@/assets/Pramod-Agarwal.jpeg';
 import nilimaImage from '@/assets/Nilima-Joshi.jpeg';
-import ravisurekaImage from '@/assets/Ravi-Sureka.jpeg';
+import ravisurekaImage from '@/assets/Ravi-Sureka.jpg';
 import sandeepImage from '@/assets/Sandeep-Goyal.jpeg';
 
 // Mock data for different member categories
