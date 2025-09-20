@@ -36,6 +36,9 @@ import kamalImage from '@/assets/Kamal-Somani.jpeg';
 import gauravImage from '@/assets/Gaurav-More.jpeg';
 import sanjeevImage from '@/assets/Sanjeev-Agarwal.jpeg';
 import pramodImage from '@/assets/Pramod-Agarwal.jpeg';
+import nilimaImage from '@/assets/Nilima-Joshi.jpeg';
+import ravisurekaImage from '@/assets/Ravi-Sureka.jpeg';
+import sandeepImage from '@/assets/Sandeep-Goyal.jpeg';
 
 // Mock data for different member categories
 const officeBarers = [
@@ -120,7 +123,7 @@ const executiveCommittee = [{
 }, {
   name: "CA Sandeep Kumar Goyal",
   role: "Executive Committee",
-  photo: bbdLogo
+  photo: sandeepImage
 }, {
   name: "CS Ravi Verma",
   role: "Executive Committee",
@@ -128,7 +131,7 @@ const executiveCommittee = [{
 }, {
   name: "CA Ravi Sureka",
   role: "Executive Committee",
-  photo: bbdLogo
+  photo: ravisurekaImage
 }, {
   name: "CA Gaurav More",
   role: "Executive Committee",
@@ -140,7 +143,7 @@ const executiveCommittee = [{
 }, {
   name: "CA Nilima Joshi",
   role: "Executive Committee",
-  photo: bbdLogo
+  photo: nilimaImage
 }, {
   name: "CA Ravi Kumar Shah",
   role: "Executive Committee",
