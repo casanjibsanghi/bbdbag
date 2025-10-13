@@ -18,7 +18,6 @@ import srigoppalImage from '@/assets/Srigoppal.jpg';
 import pankajImage from '@/assets/pankaj-verma.jpg';
 import harshImage from '@/assets/Harsh.jpg';
 import muskanImage from '@/assets/Muskan.jpeg';
-import pramodImage from '@/assets/pramod.jpeg';
 import communityGatheringImage from '@/assets/community-gathering.jpg';
 import pramodImage from '@/assets/Pramod-Agarwal.jpeg';
 
