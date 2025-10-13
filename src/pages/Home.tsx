@@ -10,7 +10,7 @@ import apurvaImage from '@/assets/Apurva.jpeg';
 import parasImage from '@/assets/Paras.jpg';
 import rkVyasImage from '@/assets/RK-Vyas.jpeg';
 import bbdLogo from '@/assets/BBD-Logo.jpeg';
-import agmFlyer from '@/assets/BBD-AGM-Flyer.jpeg';
+import agmFlyer from '@/assets/BBD_Diwali_25.jpeg';
 import pradeepImage from '@/assets/pradeep.jpeg';
 import rakeshImage from '@/assets/Rakesh.jpeg';
 import sanjayImage from '@/assets/sanjay.jpg';
@@ -71,26 +71,26 @@ const Home = () => {
               </h2>
               
               <h3 className="text-2xl font-semibold text-secondary mb-4">
-                4th Annual General Meeting
+                Diwali Get Together 2025
               </h3>
               
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                NEST: Networking | Entrepreneurship | Skills | Technology
+                The festivities don’t end with Diwali — they continue with our Post-Diwali Get-Together!
               </p>
 
               {/* Event Details */}
               <div className="space-y-3 mb-8">
                 <div className="flex items-center text-muted-foreground">
                   <Calendar className="w-5 h-5 mr-3 text-primary" />
-                  <span>September 21, 2025</span>
+                  <span>October 24, 2025</span>
                 </div>
                 <div className="flex items-center text-muted-foreground">
                   <MapPin className="w-5 h-5 mr-3 text-primary" />
-                  <span>Silver Spring Club, Kolkata</span>
+                  <span>ISKON Banquet, 22 Gurusaday Dutta Road, Kolkata</span>
                 </div>
                 <div className="flex items-center text-muted-foreground">
                   <Clock className="w-5 h-5 mr-3 text-primary" />
-                  <span>Timing: 11:00 AM onwards| Followed by Lunch</span>
+                  <span>Timing: 06:30 PM onwards</span>
                 </div>
               </div>
 
