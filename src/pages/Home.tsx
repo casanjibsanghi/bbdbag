@@ -66,7 +66,7 @@ const Home = () => {
             {/* Event Details */}
             <ScrollAnimation animation="slide-left" delay={400}>
               <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-6">
-                Upcoming <span className="text-primary">Event</span>
+                Upcoming <span className="text-secondary">Event</span>
               </h2>
               
               <h3 className="text-2xl font-semibold text-secondary mb-4">
