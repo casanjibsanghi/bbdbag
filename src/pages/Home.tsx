@@ -10,7 +10,6 @@ import apurvaImage from '@/assets/Apurva.jpeg';
 import parasImage from '@/assets/Paras.jpg';
 import rkVyasImage from '@/assets/RK-Vyas.jpeg';
 import bbdLogo from '@/assets/BBD-Logo.jpeg';
-import agmFlyer from '@/assets/BBD_Diwali_25.jpeg';
 import pradeepImage from '@/assets/pradeep.jpeg';
 import rakeshImage from '@/assets/Rakesh.jpeg';
 import sanjayImage from '@/assets/sanjay.jpg';
@@ -51,63 +50,14 @@ const Home = () => {
       {/* Upcoming Event Section */}
       <section className="py-16 lg:py-24 bg-bbd-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Event Flyer */}
-            <ScrollAnimation animation="scale-in" delay={200}>
-                <div className="relative max-w-md mx-auto">
-                  <img
-                    src={agmFlyer}
-                    alt="BBD Bag Professional Association Annual General Meeting 2025 Flyer"
-                    className="w-full rounded-xl shadow-lg"
-                  />
-              </div>
-            </ScrollAnimation>
-
-            {/* Event Details */}
-            <ScrollAnimation animation="slide-left" delay={400}>
-              <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-6">
-                Upcoming <span className="text-primary">Event</span>
-              </h2>
-              
-              <h3 className="text-2xl font-semibold text-secondary mb-4">
-                Diwali Get Together 2025
-              </h3>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                The festivities don’t end with Diwali — they continue with our Post-Diwali Get-Together!
-              </p>
-
-              {/* Event Details */}
-              <div className="space-y-3 mb-8">
-                <div className="flex items-center text-muted-foreground">
-                  <Calendar className="w-5 h-5 mr-3 text-primary" />
-                  <span>October 24, 2025</span>
-                </div>
-                <div className="flex items-center text-muted-foreground">
-                  <MapPin className="w-5 h-5 mr-3 text-primary" />
-                  <span>ISKON Banquet, 22 Gurusaday Dutta Road, Kolkata</span>
-                </div>
-                <div className="flex items-center text-muted-foreground">
-                  <Clock className="w-5 h-5 mr-3 text-primary" />
-                  <span>Timing: 06:30 PM onwards</span>
-                </div>
-              </div>
-
-              <Button 
-                size="lg"
-                className="btn-primary text-lg px-8 py-3 rounded-xl font-semibold hover:shadow-red hidden"
-                asChild
-              >
-                <a 
-                  href="https://example.com/register" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  Register Now
-                </a>
-              </Button>
-            </ScrollAnimation>
-          </div>
+          <ScrollAnimation animation="fade-up" className="text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-6">
+              Upcoming <span className="text-primary">Events</span>
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Coming soon...
+            </p>
+          </ScrollAnimation>
         </div>
       </section>
 
