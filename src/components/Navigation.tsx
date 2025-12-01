@@ -21,6 +21,9 @@ const Navigation = () => {
     name: 'About Us',
     path: '/about-us'
   }, {
+    name: 'Past Events',
+    path: '/past-events'
+  }, {
     name: 'Connect',
     path: '/connect'
   }, {
