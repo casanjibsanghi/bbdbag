@@ -51,91 +51,14 @@ const Home = () => {
       {/* Upcoming Event Section */}
       <section className="py-16 lg:py-24 bg-bbd-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Event Flyer */}
-            <ScrollAnimation animation="scale-in" delay={200}>
-              <div className="relative max-w-md mx-auto">
-                <img
-                  src={cpeEventFlyer}
-                  alt="3 CPE Summit on GST Litigations and Tribunal - B.B.D. BAG CA CPE Study Circle"
-                  className="w-full rounded-xl shadow-lg"
-                />
-              </div>
-            </ScrollAnimation>
-
-            {/* Event Details */}
-            <ScrollAnimation animation="slide-left" delay={400}>
-              <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-6">
-                Upcoming <span className="text-secondary">Event</span>
-              </h2>
-              
-              <h3 className="text-2xl font-semibold text-secondary mb-4">
-                🌟 3 CPE Summit on GST Litigations and Tribunal 🌟
-              </h3>
-
-              {/* Event Details */}
-              <div className="space-y-3 mb-8">
-                <div className="flex items-start text-muted-foreground">
-                  <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    <div className="font-semibold text-secondary">Date:</div>
-                    <span>Friday, 28th November, 2025</span>
-                  </div>
-                </div>
-                <div className="flex items-start text-muted-foreground">
-                  <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    <div className="font-semibold text-secondary">Time:</div>
-                    <span>From 4pm to 7pm</span>
-                  </div>
-                </div>
-                <div className="flex items-start text-muted-foreground">
-                  <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    <div className="font-semibold text-secondary">Venue:</div>
-                    <span>BBD Bag Ashika Conference Hall, Commerce House, 4th Floor</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Additional Details */}
-              <div className="bg-white rounded-lg p-6 mb-6 shadow-sm">
-                <div className="space-y-3 text-muted-foreground">
-                  <div>
-                    <span className="font-semibold text-secondary">🧮 CPE Hours:</span> 3 hrs (Structured)
-                  </div>
-                  <div>
-                    <span className="font-semibold text-secondary">💰 Fees:</span> ₹200/-
-                  </div>
-                  <div>
-                    <span className="font-semibold text-secondary">🎯 Topic:</span> GST Litigations and Tribunal
-                  </div>
-                  <div>
-                    <span className="font-semibold text-secondary">👤 Faculty:</span> CA Abhishek Sanyal
-                  </div>
-                </div>
-              </div>
-
-              <Button 
-                size="lg"
-                className="btn-primary text-lg px-8 py-3 rounded-xl font-semibold hover:shadow-red"
-                asChild
-              >
-                <a 
-                  href="https://imjo.in/hvMVk2" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  Register Now
-                </a>
-              </Button>
-
-              <p className="text-sm text-muted-foreground mt-4">
-                With regards,<br />
-                <span className="font-semibold">B.B.D. BAG CA CPE STUDY CIRCLE OF EIRC OF ICAI</span>
-              </p>
-            </ScrollAnimation>
-          </div>
+          <ScrollAnimation animation="fade-up" className="text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-6">
+              Upcoming <span className="text-secondary">Event</span>
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Coming soon...
+            </p>
+          </ScrollAnimation>
         </div>
       </section>
 

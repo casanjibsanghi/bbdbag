@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Connect from "./pages/Connect";
+import PastEvents from "./pages/PastEvents";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
               <Route path="/" element={<Home />} />
               <Route path="/about-us" element={<AboutUs />} />
               <Route path="/connect" element={<Connect />} />
+              <Route path="/past-events" element={<PastEvents />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
