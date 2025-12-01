@@ -21,6 +21,7 @@ import muskanImage from '@/assets/Muskan.jpeg';
 import communityGatheringImage from '@/assets/community-gathering.jpg';
 import pramodImage from '@/assets/Pramod-Agarwal.jpeg';
 import cpeEventFlyer from '@/assets/CPE-GST-Event-Flyer.jpeg';
+import gstr9EventFlyer from '@/assets/GSTR-9-Event-Flyer.jpeg';
 import pastEvent1 from '@/assets/past-event-1.jpeg';
 import pastEvent2 from '@/assets/past-event-2.jpeg';
 import pastEvent3 from '@/assets/past-event-3.jpeg';
@@ -71,16 +72,90 @@ const Home = () => {
 
             {/* Upcoming Events Tab */}
             <TabsContent value="upcoming">
-              <ScrollAnimation animation="fade-up">
-                <div className="text-center py-12">
-                  <h3 className="text-2xl font-bold text-secondary mb-4">
-                    Upcoming Events
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                {/* Event Flyer */}
+                <ScrollAnimation animation="scale-in" delay={200}>
+                  <div className="relative max-w-md mx-auto">
+                    <img
+                      src={gstr9EventFlyer}
+                      alt="Seminar on GSTR 9 and 9C - BBD Bag CA CPE Study Circle"
+                      className="w-full rounded-xl shadow-lg"
+                    />
+                  </div>
+                </ScrollAnimation>
+
+                {/* Event Details */}
+                <ScrollAnimation animation="slide-left" delay={400}>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-6">
+                    🌟 Seminar on GSTR 9 and 9C : Tools, Traps and Techniques for Zero Notice 🌟
                   </h3>
-                  <p className="text-xl text-muted-foreground">
-                    Coming soon...
+
+                  {/* Event Details */}
+                  <div className="space-y-3 mb-8">
+                    <div className="flex items-start text-muted-foreground">
+                      <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        <div className="font-semibold text-secondary">Date:</div>
+                        <span>Friday, 05th December 2025</span>
+                      </div>
+                    </div>
+                    <div className="flex items-start text-muted-foreground">
+                      <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        <div className="font-semibold text-secondary">Time:</div>
+                        <span>From 4pm to 7pm</span>
+                      </div>
+                    </div>
+                    <div className="flex items-start text-muted-foreground">
+                      <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        <div className="font-semibold text-secondary">Venue:</div>
+                        <span>BBD Bag Ashika Conference Hall, Commerce House, 4th Floor</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Additional Details */}
+                  <div className="bg-white rounded-lg p-6 mb-6 shadow-sm">
+                    <div className="space-y-3 text-muted-foreground">
+                      <div>
+                        <span className="font-semibold text-secondary">🧮 CPE Hours:</span> 3 hrs (Structured)
+                      </div>
+                      <div>
+                        <span className="font-semibold text-secondary">💰 Fees:</span> ₹200/-
+                      </div>
+                      <div>
+                        <span className="font-semibold text-secondary">🎯 Topic:</span> GSTR 9 and 9C
+                      </div>
+                      <div>
+                        <span className="font-semibold text-secondary">👤 Session Chairman:</span> CA Ravi Sureka
+                      </div>
+                      <div>
+                        <span className="font-semibold text-secondary">👤 Speaker:</span> CA Pradeep Modi
+                      </div>
+                    </div>
+                  </div>
+
+                  <Button 
+                    size="lg"
+                    className="btn-primary text-lg px-8 py-3 rounded-xl font-semibold hover:shadow-red"
+                    asChild
+                  >
+                    <a 
+                      href="https://www.instamojo.com/@bbdbagcastudycircle/l82d2ba21c85a46faa88783461187e1f4/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      Register Now
+                    </a>
+                  </Button>
+
+                  <p className="text-sm text-muted-foreground mt-4">
+                    With regards,<br />
+                    <span className="font-semibold">B.B.D. BAG CA CPE STUDY CIRCLE OF EIRC OF ICAI</span>
                   </p>
-                </div>
-              </ScrollAnimation>
+                </ScrollAnimation>
+              </div>
             </TabsContent>
 
             {/* Past Events Tab */}
