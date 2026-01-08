@@ -22,6 +22,7 @@ import communityGatheringImage from '@/assets/community-gathering.jpg';
 import pramodImage from '@/assets/Pramod-Agarwal.jpeg';
 import cpeEventFlyer from '@/assets/CPE-GST-Event-Flyer.jpeg';
 import gstr9EventFlyer from '@/assets/GSTR-9-Event-Flyer.jpeg';
+import charitableTrustsFlyer from '@/assets/charitable-trusts-flyer.jpeg';
 import pastEvent1 from '@/assets/past-event-1.jpeg';
 import pastEvent2 from '@/assets/past-event-2.jpeg';
 import pastEvent3 from '@/assets/past-event-3.jpeg';
@@ -72,15 +73,88 @@ const Home = () => {
 
             {/* Upcoming Events Tab */}
             <TabsContent value="upcoming">
-              <div className="text-center py-16">
-                <ScrollAnimation animation="fade-up">
-                  <div className="bg-white rounded-xl p-12 shadow-sm max-w-md mx-auto">
-                    <Calendar className="w-16 h-16 text-primary mx-auto mb-4" />
-                    <h3 className="text-2xl font-bold text-secondary mb-4">Coming Soon...</h3>
-                    <p className="text-muted-foreground">
-                      Stay tuned for our next exciting event. Check back soon for updates!
-                    </p>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                {/* Event Flyer */}
+                <ScrollAnimation animation="scale-in" delay={200}>
+                  <div className="relative max-w-md mx-auto">
+                    <img
+                      src={charitableTrustsFlyer}
+                      alt="Seminar on Charitable Trusts - BBD Bag Professional Association"
+                      className="w-full rounded-xl shadow-lg"
+                    />
                   </div>
+                </ScrollAnimation>
+
+                {/* Event Details */}
+                <ScrollAnimation animation="slide-left" delay={400}>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-6">
+                    🌟 Seminar on Charitable Trusts 🌟
+                  </h3>
+
+                  {/* Event Details */}
+                  <div className="space-y-3 mb-8">
+                    <div className="flex items-start text-muted-foreground">
+                      <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        <div className="font-semibold text-secondary">Date:</div>
+                        <span>Saturday, 10th January 2026</span>
+                      </div>
+                    </div>
+                    <div className="flex items-start text-muted-foreground">
+                      <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        <div className="font-semibold text-secondary">Time:</div>
+                        <span>From 4pm to 6pm</span>
+                      </div>
+                    </div>
+                    <div className="flex items-start text-muted-foreground">
+                      <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        <div className="font-semibold text-secondary">Venue:</div>
+                        <span>BBD Bag Ashika Conference Hall, Commerce House, 4th Floor, Room No 1, Kolkata 700013</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Additional Details */}
+                  <div className="bg-white rounded-lg p-6 mb-6 shadow-sm">
+                    <div className="space-y-3 text-muted-foreground">
+                      <div>
+                        <span className="font-semibold text-secondary">🎯 Topic:</span> A brief discussion on new provisions of Charitable Trusts in Income Tax Act 2025
+                      </div>
+                      <div>
+                        <span className="font-semibold text-secondary">👤 Session Chairman:</span> CA Ashoke Maheshwari
+                      </div>
+                      <div>
+                        <span className="font-semibold text-secondary">👤 Faculty:</span> CA Suresh Kejriwal
+                      </div>
+                      <div>
+                        <span className="font-semibold text-secondary">💰 Fees:</span> NIL
+                      </div>
+                      <div className="text-primary font-semibold">
+                        ⚠️ Limited to 50 Registrations ONLY - First Come First Serve basis
+                      </div>
+                    </div>
+                  </div>
+
+                  <Button 
+                    size="lg"
+                    className="btn-primary text-lg px-8 py-3 rounded-xl font-semibold hover:shadow-red"
+                    asChild
+                  >
+                    <a 
+                      href="https://forms.gle/b78KQVrnaT6yCtbHA" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      Register Now
+                    </a>
+                  </Button>
+
+                  <p className="text-sm text-muted-foreground mt-4">
+                    With regards,<br />
+                    <span className="font-semibold">B.B.D. PROFESSIONAL ASSOCIATION</span>
+                  </p>
                 </ScrollAnimation>
               </div>
             </TabsContent>
