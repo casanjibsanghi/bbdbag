@@ -10,6 +10,7 @@ import AboutUs from "./pages/AboutUs";
 import Connect from "./pages/Connect";
 import PastEvents from "./pages/PastEvents";
 import NotFound from "./pages/NotFound";
+import NotificationPopup from "./components/NotificationPopup";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <NotificationPopup />
         <div className="min-h-screen flex flex-col">
           <Navigation />
           <main className="flex-grow">
