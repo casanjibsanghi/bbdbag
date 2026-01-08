@@ -23,6 +23,7 @@ import pramodImage from '@/assets/Pramod-Agarwal.jpeg';
 import cpeEventFlyer from '@/assets/CPE-GST-Event-Flyer.jpeg';
 import gstr9EventFlyer from '@/assets/GSTR-9-Event-Flyer.jpeg';
 import charitableTrustsFlyer from '@/assets/charitable-trusts-flyer.jpeg';
+import labourCodesFlyer from '@/assets/labour-codes-flyer.jpeg';
 import pastEvent1 from '@/assets/past-event-1.jpeg';
 import pastEvent2 from '@/assets/past-event-2.jpeg';
 import pastEvent3 from '@/assets/past-event-3.jpeg';
@@ -73,90 +74,204 @@ const Home = () => {
 
             {/* Upcoming Events Tab */}
             <TabsContent value="upcoming">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                {/* Event Flyer */}
-                <ScrollAnimation animation="scale-in" delay={200}>
-                  <div className="relative max-w-md mx-auto">
-                    <img
-                      src={charitableTrustsFlyer}
-                      alt="Seminar on Charitable Trusts - BBD Bag Professional Association"
-                      className="w-full rounded-xl shadow-lg"
-                    />
+              <Tabs defaultValue="jan9" className="w-full">
+                <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8">
+                  <TabsTrigger value="jan9">9th January</TabsTrigger>
+                  <TabsTrigger value="jan10">10th January</TabsTrigger>
+                </TabsList>
+
+                {/* 9th January - Labour Codes Webinar */}
+                <TabsContent value="jan9">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    {/* Event Flyer */}
+                    <ScrollAnimation animation="scale-in" delay={200}>
+                      <div className="relative max-w-md mx-auto">
+                        <img
+                          src={labourCodesFlyer}
+                          alt="Webinar on New Labour Codes - BBD Bag Professional Association"
+                          className="w-full rounded-xl shadow-lg"
+                        />
+                      </div>
+                    </ScrollAnimation>
+
+                    {/* Event Details */}
+                    <ScrollAnimation animation="slide-left" delay={400}>
+                      <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-6">
+                        🌟 Webinar on New Labour Codes 🌟
+                      </h3>
+
+                      {/* Event Details */}
+                      <div className="space-y-3 mb-8">
+                        <div className="flex items-start text-muted-foreground">
+                          <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                          <div>
+                            <div className="font-semibold text-secondary">Date:</div>
+                            <span>Friday, 9th January 2026</span>
+                          </div>
+                        </div>
+                        <div className="flex items-start text-muted-foreground">
+                          <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                          <div>
+                            <div className="font-semibold text-secondary">Time:</div>
+                            <span>From 5pm to 7pm</span>
+                          </div>
+                        </div>
+                        <div className="flex items-start text-muted-foreground">
+                          <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                          <div>
+                            <div className="font-semibold text-secondary">Venue:</div>
+                            <span>BBD Bag Ashika Conference Hall, Commerce House, 4th Floor, Room No 1, Kolkata 700013</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Additional Details */}
+                      <div className="bg-white rounded-lg p-6 mb-6 shadow-sm">
+                        <div className="space-y-3 text-muted-foreground">
+                          <div>
+                            <span className="font-semibold text-secondary">🎯 Topic:</span> Decoding of New Labour Codes; Accounting for Employees Benefits; Payroll Restructuring
+                          </div>
+                          <div>
+                            <span className="font-semibold text-secondary">👤 Session Chairman:</span> CA R K Vyas
+                          </div>
+                          <div>
+                            <span className="font-semibold text-secondary">👤 Faculty:</span> CA Vivek Agarwal
+                          </div>
+                          <div>
+                            <span className="font-semibold text-secondary">💰 Fees:</span> NIL
+                          </div>
+                          <div className="text-primary font-semibold">
+                            ⚠️ Limited to 50 Registrations ONLY for PHYSICAL - First Come First Serve basis
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="space-y-4 mb-6">
+                        <Button 
+                          size="lg"
+                          className="btn-primary text-lg px-8 py-3 rounded-xl font-semibold hover:shadow-red mr-4"
+                          asChild
+                        >
+                          <a 
+                            href="https://forms.gle/kX8hxMKwcyXxM7DJA" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                          >
+                            Register for Physical
+                          </a>
+                        </Button>
+                        <Button 
+                          size="lg"
+                          variant="outline"
+                          className="text-lg px-8 py-3 rounded-xl font-semibold"
+                          asChild
+                        >
+                          <a 
+                            href="https://app.inmeet.ai/inconf/695e3b8db6092c184b523821/ZmFsc2U=" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                          >
+                            Join Webinar (Password: 123456)
+                          </a>
+                        </Button>
+                      </div>
+
+                      <p className="text-sm text-muted-foreground mt-4">
+                        With regards,<br />
+                        <span className="font-semibold">B.B.D. PROFESSIONAL ASSOCIATION</span>
+                      </p>
+                    </ScrollAnimation>
                   </div>
-                </ScrollAnimation>
+                </TabsContent>
 
-                {/* Event Details */}
-                <ScrollAnimation animation="slide-left" delay={400}>
-                  <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-6">
-                    🌟 Seminar on Charitable Trusts 🌟
-                  </h3>
+                {/* 10th January - Charitable Trusts Seminar */}
+                <TabsContent value="jan10">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    {/* Event Flyer */}
+                    <ScrollAnimation animation="scale-in" delay={200}>
+                      <div className="relative max-w-md mx-auto">
+                        <img
+                          src={charitableTrustsFlyer}
+                          alt="Seminar on Charitable Trusts - BBD Bag Professional Association"
+                          className="w-full rounded-xl shadow-lg"
+                        />
+                      </div>
+                    </ScrollAnimation>
 
-                  {/* Event Details */}
-                  <div className="space-y-3 mb-8">
-                    <div className="flex items-start text-muted-foreground">
-                      <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
-                      <div>
-                        <div className="font-semibold text-secondary">Date:</div>
-                        <span>Saturday, 10th January 2026</span>
+                    {/* Event Details */}
+                    <ScrollAnimation animation="slide-left" delay={400}>
+                      <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-6">
+                        🌟 Seminar on Charitable Trusts 🌟
+                      </h3>
+
+                      {/* Event Details */}
+                      <div className="space-y-3 mb-8">
+                        <div className="flex items-start text-muted-foreground">
+                          <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                          <div>
+                            <div className="font-semibold text-secondary">Date:</div>
+                            <span>Saturday, 10th January 2026</span>
+                          </div>
+                        </div>
+                        <div className="flex items-start text-muted-foreground">
+                          <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                          <div>
+                            <div className="font-semibold text-secondary">Time:</div>
+                            <span>From 4pm to 6pm</span>
+                          </div>
+                        </div>
+                        <div className="flex items-start text-muted-foreground">
+                          <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                          <div>
+                            <div className="font-semibold text-secondary">Venue:</div>
+                            <span>BBD Bag Ashika Conference Hall, Commerce House, 4th Floor, Room No 1, Kolkata 700013</span>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex items-start text-muted-foreground">
-                      <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
-                      <div>
-                        <div className="font-semibold text-secondary">Time:</div>
-                        <span>From 4pm to 6pm</span>
+
+                      {/* Additional Details */}
+                      <div className="bg-white rounded-lg p-6 mb-6 shadow-sm">
+                        <div className="space-y-3 text-muted-foreground">
+                          <div>
+                            <span className="font-semibold text-secondary">🎯 Topic:</span> A brief discussion on new provisions of Charitable Trusts in Income Tax Act 2025
+                          </div>
+                          <div>
+                            <span className="font-semibold text-secondary">👤 Session Chairman:</span> CA Ashoke Maheshwari
+                          </div>
+                          <div>
+                            <span className="font-semibold text-secondary">👤 Faculty:</span> CA Suresh Kejriwal
+                          </div>
+                          <div>
+                            <span className="font-semibold text-secondary">💰 Fees:</span> NIL
+                          </div>
+                          <div className="text-primary font-semibold">
+                            ⚠️ Limited to 50 Registrations ONLY - First Come First Serve basis
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex items-start text-muted-foreground">
-                      <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
-                      <div>
-                        <div className="font-semibold text-secondary">Venue:</div>
-                        <span>BBD Bag Ashika Conference Hall, Commerce House, 4th Floor, Room No 1, Kolkata 700013</span>
-                      </div>
-                    </div>
+
+                      <Button 
+                        size="lg"
+                        className="btn-primary text-lg px-8 py-3 rounded-xl font-semibold hover:shadow-red"
+                        asChild
+                      >
+                        <a 
+                          href="https://forms.gle/b78KQVrnaT6yCtbHA" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          Register Now
+                        </a>
+                      </Button>
+
+                      <p className="text-sm text-muted-foreground mt-4">
+                        With regards,<br />
+                        <span className="font-semibold">B.B.D. PROFESSIONAL ASSOCIATION</span>
+                      </p>
+                    </ScrollAnimation>
                   </div>
-
-                  {/* Additional Details */}
-                  <div className="bg-white rounded-lg p-6 mb-6 shadow-sm">
-                    <div className="space-y-3 text-muted-foreground">
-                      <div>
-                        <span className="font-semibold text-secondary">🎯 Topic:</span> A brief discussion on new provisions of Charitable Trusts in Income Tax Act 2025
-                      </div>
-                      <div>
-                        <span className="font-semibold text-secondary">👤 Session Chairman:</span> CA Ashoke Maheshwari
-                      </div>
-                      <div>
-                        <span className="font-semibold text-secondary">👤 Faculty:</span> CA Suresh Kejriwal
-                      </div>
-                      <div>
-                        <span className="font-semibold text-secondary">💰 Fees:</span> NIL
-                      </div>
-                      <div className="text-primary font-semibold">
-                        ⚠️ Limited to 50 Registrations ONLY - First Come First Serve basis
-                      </div>
-                    </div>
-                  </div>
-
-                  <Button 
-                    size="lg"
-                    className="btn-primary text-lg px-8 py-3 rounded-xl font-semibold hover:shadow-red"
-                    asChild
-                  >
-                    <a 
-                      href="https://forms.gle/b78KQVrnaT6yCtbHA" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      Register Now
-                    </a>
-                  </Button>
-
-                  <p className="text-sm text-muted-foreground mt-4">
-                    With regards,<br />
-                    <span className="font-semibold">B.B.D. PROFESSIONAL ASSOCIATION</span>
-                  </p>
-                </ScrollAnimation>
-              </div>
+                </TabsContent>
+              </Tabs>
             </TabsContent>
 
             {/* Past Events Tab */}
