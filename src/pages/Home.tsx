@@ -24,7 +24,7 @@ import cpeEventFlyer from '@/assets/CPE-GST-Event-Flyer.jpeg';
 import gstr9EventFlyer from '@/assets/GSTR-9-Event-Flyer.jpeg';
 import charitableTrustsFlyer from '@/assets/charitable-trusts-flyer.jpeg';
 import labourCodesFlyer from '@/assets/labour-codes-flyer.jpeg';
-import nbfcAuditFlyer from '@/assets/nbfc-audit-flyer.jpeg';
+import nbfcAuditFlyerJan16 from '@/assets/nbfc-audit-flyer-jan16.jpeg';
 import pastEvent1 from '@/assets/past-event-1.jpeg';
 import pastEvent2 from '@/assets/past-event-2.jpeg';
 import pastEvent3 from '@/assets/past-event-3.jpeg';
@@ -80,7 +80,7 @@ const Home = () => {
                 <ScrollAnimation animation="scale-in" delay={200}>
                   <div className="relative max-w-md mx-auto">
                     <img
-                      src={nbfcAuditFlyer}
+                      src={nbfcAuditFlyerJan16}
                       alt="Seminar on NBFC Audit and Compliances - BBD Bag Professional Association"
                       className="w-full rounded-xl shadow-lg"
                     />
@@ -90,7 +90,7 @@ const Home = () => {
                 {/* Event Details */}
                 <ScrollAnimation animation="slide-left" delay={400}>
                   <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-6">
-                    🌟 Seminar on NBFC Audit and Compliances 🌟
+                    📢 NON CPE SEMINAR ON NBFC AUDIT AND COMPLIANCES 📢
                   </h3>
 
                   {/* Event Details */}
@@ -106,14 +106,14 @@ const Home = () => {
                       <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
                       <div>
                         <div className="font-semibold text-secondary">Time:</div>
-                        <span>From 5pm to 7pm</span>
+                        <span>5.00 PM to 7.00 PM</span>
                       </div>
                     </div>
                     <div className="flex items-start text-muted-foreground">
                       <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
                       <div>
                         <div className="font-semibold text-secondary">Venue:</div>
-                        <span>BBD Bag Ashika Conference Hall, Commerce House, 2A Ganesh Chandra Avenue, 4th Floor, Room No 1, Kolkata 700013</span>
+                        <span>BBD Bag Ashika Conference Hall, Commerce House, 2A Ganesh Chandra Avenue, 4th Floor, Room No 1, Kolkata – 700013</span>
                       </div>
                     </div>
                   </div>
@@ -122,19 +122,27 @@ const Home = () => {
                   <div className="bg-white rounded-lg p-6 mb-6 shadow-sm">
                     <div className="space-y-3 text-muted-foreground">
                       <div>
-                        <span className="font-semibold text-secondary">🎯 Topic:</span> NBFC Audit and Compliances
+                        <span className="font-semibold text-secondary">🎯 Topic:</span> NBFC Audit and Compliances - RBI Master Directions 2025
                       </div>
                       <div>
-                        <span className="font-semibold text-secondary">👤 Session Chairman:</span> CA Apurva Maheswari
+                        <span className="font-semibold text-secondary">👤 Session Chairman:</span> Apurva Maheswari
                       </div>
                       <div>
                         <span className="font-semibold text-secondary">👤 Speaker:</span> CA Mohit Bhuteria
                       </div>
                       <div>
-                        <span className="font-semibold text-secondary">💰 Fees:</span> NIL
+                        <span className="font-semibold text-secondary">💰 Fees:</span> NIL (Free to attend)
                       </div>
-                      <div className="text-primary font-semibold">
-                        Physical Seminar
+                      <div>
+                        <span className="font-semibold text-secondary">📌 Mode:</span> Physical Seminar
+                      </div>
+                      <div className="pt-2 border-t">
+                        <span className="font-semibold text-secondary">📲 Registration / Confirmation:</span>
+                        <div className="mt-1">📞 CA Apurva Maheswari – 9836107990</div>
+                        <div>📞 CA Ravi Sureka – 9830608999</div>
+                      </div>
+                      <div className="text-primary font-semibold mt-2">
+                        👉 Limited seats – prior registration required.
                       </div>
                     </div>
                   </div>
