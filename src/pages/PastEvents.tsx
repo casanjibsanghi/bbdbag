@@ -5,6 +5,7 @@ import cpeEventFlyer from '@/assets/CPE-GST-Event-Flyer.jpeg';
 import gstr9EventFlyer from '@/assets/GSTR-9-Event-Flyer.jpeg';
 import labourCodesFlyer from '@/assets/labour-codes-flyer.jpeg';
 import charitableTrustsFlyer from '@/assets/charitable-trusts-flyer.jpeg';
+import nbfcAuditFlyer from '@/assets/nbfc-audit-flyer.jpeg';
 import pastEvent1 from '@/assets/past-event-1.jpeg';
 import pastEvent2 from '@/assets/past-event-2.jpeg';
 import pastEvent3 from '@/assets/past-event-3.jpeg';
@@ -24,6 +25,78 @@ const PastEvents = () => {
             Explore our successful events and professional gatherings
           </p>
         </ScrollAnimation>
+
+        {/* NBFC Audit Event Section (Jan 16, 2026) */}
+        <section className="py-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Event Flyer */}
+            <ScrollAnimation animation="scale-in" delay={200}>
+              <div className="relative max-w-md mx-auto sticky top-24">
+                <img
+                  src={nbfcAuditFlyer}
+                  alt="Seminar on NBFC Audit and Compliances - BBD Bag Professional Association"
+                  className="w-full rounded-xl shadow-lg"
+                />
+              </div>
+            </ScrollAnimation>
+
+            {/* Event Details */}
+            <ScrollAnimation animation="slide-left" delay={400}>
+              <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-6">
+                🌟 Seminar on NBFC Audit and Compliances 🌟
+              </h2>
+
+              <div className="space-y-3 mb-8">
+                <div className="flex items-start text-muted-foreground">
+                  <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-secondary">Date:</div>
+                    <span>Friday, 16th January 2026</span>
+                  </div>
+                </div>
+                <div className="flex items-start text-muted-foreground">
+                  <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-secondary">Time:</div>
+                    <span>From 5pm to 7pm</span>
+                  </div>
+                </div>
+                <div className="flex items-start text-muted-foreground">
+                  <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-secondary">Venue:</div>
+                    <span>BBD Bag Ashika Conference Hall, Commerce House, 2A Ganesh Chandra Avenue, 4th Floor, Room No 1, Kolkata 700013</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg p-6 mb-6 shadow-sm">
+                <div className="space-y-3 text-muted-foreground">
+                  <div>
+                    <span className="font-semibold text-secondary">🎯 Topic:</span> NBFC Audit and Compliances
+                  </div>
+                  <div>
+                    <span className="font-semibold text-secondary">👤 Session Chairman:</span> CA Apurva Maheswari
+                  </div>
+                  <div>
+                    <span className="font-semibold text-secondary">👤 Speaker:</span> CA Mohit Bhuteria
+                  </div>
+                  <div>
+                    <span className="font-semibold text-secondary">💰 Fees:</span> NIL
+                  </div>
+                  <div className="text-primary font-semibold">
+                    Physical Seminar
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-sm text-muted-foreground mt-4">
+                With regards,<br />
+                <span className="font-semibold">B.B.D. PROFESSIONAL ASSOCIATION</span>
+              </p>
+            </ScrollAnimation>
+          </div>
+        </section>
 
         {/* Labour Codes Event Section */}
         <section className="py-12">
