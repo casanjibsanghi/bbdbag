@@ -25,7 +25,7 @@ import gstr9EventFlyer from '@/assets/GSTR-9-Event-Flyer.jpeg';
 import charitableTrustsFlyer from '@/assets/charitable-trusts-flyer.jpeg';
 import labourCodesFlyer from '@/assets/labour-codes-flyer.jpeg';
 import nbfcAuditFlyerJan16 from '@/assets/nbfc-audit-flyer-jan16.jpeg';
-import ckcaSeminarFlyer from '@/assets/ckca-seminar-flyer.jpeg';
+import annualPicnicFlyer from '@/assets/annual-picnic-flyer.jpeg';
 import pastEvent1 from '@/assets/past-event-1.jpeg';
 import pastEvent2 from '@/assets/past-event-2.jpeg';
 import pastEvent3 from '@/assets/past-event-3.jpeg';
@@ -164,6 +164,42 @@ const Home = () => {
             {/* Past Events Tab */}
             <TabsContent value="past">
               <div className="space-y-16">
+                {/* Annual Picnic Event (Jan 18, 2026) - Now Past */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                  {/* Event Flyer */}
+                  <ScrollAnimation animation="scale-in" delay={200}>
+                    <div className="relative max-w-md mx-auto">
+                      <img
+                        src={annualPicnicFlyer}
+                        alt="BBD Bag Professional Association Annual Picnic 2026"
+                        className="w-full rounded-xl shadow-lg"
+                      />
+                    </div>
+                  </ScrollAnimation>
+
+                  {/* Event Details */}
+                  <ScrollAnimation animation="slide-left" delay={400}>
+                    <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-6">
+                      🎉 BBD Bag Professional Association Annual Picnic 2026 🎉
+                    </h3>
+
+                    <div className="space-y-3 mb-8">
+                      <div className="flex items-start text-muted-foreground">
+                        <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                        <div>
+                          <div className="font-semibold text-secondary">Date:</div>
+                          <span>Sunday, 18th January 2026</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <p className="text-sm text-muted-foreground mt-4">
+                      With regards,<br />
+                      <span className="font-semibold">Team BBD Bag Professional Association</span>
+                    </p>
+                  </ScrollAnimation>
+                </div>
+
                 {/* NBFC Audit Event (Jan 16, 2026) - Now Past */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                   {/* Event Flyer */}
