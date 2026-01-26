@@ -76,88 +76,87 @@ const Home = () => {
 
             {/* Upcoming Events Tab */}
             <TabsContent value="upcoming">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                {/* Event Flyer */}
-                <ScrollAnimation animation="scale-in" delay={200}>
-                  <div className="relative max-w-md mx-auto">
-                    <img
-                      src={ckcaSeminarFlyer}
-                      alt="CKCA 4 Unstructured CPE Hrs Seminar on AI in Stock Investing and PMLA"
-                      className="w-full rounded-xl shadow-lg"
-                    />
-                  </div>
-                </ScrollAnimation>
-
-                {/* Event Details */}
-                <ScrollAnimation animation="slide-left" delay={400}>
-                  <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-6">
-                    📢 4 Unstructured CPE Hrs Seminar on AI in Stock Investing and PMLA for Auditors and Tax Professionals 📢
-                  </h3>
-
-                  {/* Event Details */}
-                  <div className="space-y-3 mb-8">
-                    <div className="flex items-start text-muted-foreground">
-                      <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
-                      <div>
-                        <div className="font-semibold text-secondary">Date:</div>
-                        <span>Tuesday, 27th January 2026</span>
-                      </div>
-                    </div>
-                    <div className="flex items-start text-muted-foreground">
-                      <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
-                      <div>
-                        <div className="font-semibold text-secondary">Time:</div>
-                        <span>3:00 PM to 7:00 PM</span>
-                      </div>
-                    </div>
-                    <div className="flex items-start text-muted-foreground">
-                      <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
-                      <div>
-                        <div className="font-semibold text-secondary">Venue:</div>
-                        <span>CKCA Dharam Chandra Pugalia Knowledge Centre, Poddar Court, Gate No - 3, Suite - 6B, 6th Floor, 18, Rabindra Sarani, Kolkata - 700 001</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Additional Details */}
-                  <div className="bg-white rounded-lg p-6 mb-6 shadow-sm">
-                    <div className="space-y-3 text-muted-foreground">
-                      <div>
-                        <span className="font-semibold text-secondary">🎯 Topics & Speakers:</span>
-                        <ul className="mt-2 list-disc list-inside">
-                          <li>AI in Stock Investing – CA Suresh Modi</li>
-                          <li>PMLA for Auditors and Tax Professionals – Dr. (Adv) Vishal Gupta</li>
-                        </ul>
-                      </div>
-                      <div>
-                        <span className="font-semibold text-secondary">🧮 CPE Hours:</span> 4 hrs (Unstructured)
-                      </div>
-                      <div>
-                        <span className="font-semibold text-secondary">💰 Fees:</span> ₹200/- for Non-CKCA Members | Free for CKCA Members
-                      </div>
-                      <div className="pt-2 border-t">
-                        <span className="font-semibold text-secondary">🔗 Registration Link:</span>
-                        <div className="mt-1">
-                          <a 
-                            href="https://centralkolkata.org/#sectionEvent1" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="text-primary hover:underline"
-                          >
-                            https://centralkolkata.org/#sectionEvent1
-                          </a>
+              <div className="max-w-4xl mx-auto">
+                <ScrollAnimation animation="fade-up" delay={200}>
+                  <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+                    <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-6">
+                      Speak with Confidence & Lead with Impact 🎤✨
+                    </h3>
+                    
+                    <p className="text-lg text-muted-foreground mb-6">
+                      Ever wanted to express your ideas confidently, speak fearlessly in public, or grow as a leader?
+                    </p>
+                    
+                    <p className="text-xl font-semibold text-primary mb-6">
+                      Here's your chance!
+                    </p>
+                    
+                    <div className="bg-bbd-gray-50 rounded-lg p-6 mb-8">
+                      <h4 className="text-xl font-bold text-secondary mb-4">
+                        🚀 FREE Toastmasters Demo Meeting
+                      </h4>
+                      <p className="text-muted-foreground mb-4">
+                        Organised by BBD Bag Professional Association
+                      </p>
+                      
+                      <div className="space-y-3 text-left max-w-md mx-auto">
+                        <div className="flex items-start text-muted-foreground">
+                          <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                          <div>
+                            <span className="font-semibold text-secondary">Date:</span> Saturday, 31st January 2026
+                          </div>
+                        </div>
+                        <div className="flex items-start text-muted-foreground">
+                          <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                          <div>
+                            <span className="font-semibold text-secondary">Time:</span> 4:00 PM – 6:00 PM
+                          </div>
+                        </div>
+                        <div className="flex items-start text-muted-foreground">
+                          <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                          <div>
+                            <span className="font-semibold text-secondary">Venue:</span> BBD Bag Ashika Conference Hall
+                          </div>
                         </div>
                       </div>
-                      <div className="text-primary font-semibold mt-2">
-                        👉 Limited Seats Available – Pre Registration required.
-                      </div>
                     </div>
+                    
+                    <p className="text-muted-foreground mb-6">
+                      Experience firsthand how Toastmasters transforms communication skills, builds leadership, and boosts confidence - in a fun, supportive, and professional environment 🌟
+                    </p>
+                    
+                    <div className="space-y-2 text-muted-foreground mb-6">
+                      <p>👥 Open to all interested professionals</p>
+                      <p>🎯 No prior experience required</p>
+                    </div>
+                    
+                    <div className="bg-primary/10 rounded-lg p-4 mb-6">
+                      <p className="font-semibold text-secondary mb-2">
+                        👉 Join our WhatsApp group for updates & details:
+                      </p>
+                      <a 
+                        href="https://chat.whatsapp.com/Gy4oTYBX3ga9FVXGK31vkq" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-primary hover:underline font-medium"
+                      >
+                        🔗 https://chat.whatsapp.com/Gy4oTYBX3ga9FVXGK31vkq
+                      </a>
+                    </div>
+                    
+                    <p className="text-lg font-semibold text-primary mb-4">
+                      Come, discover the speaker and leader within you!
+                    </p>
+                    
+                    <p className="text-muted-foreground">
+                      We look forward to seeing you there 🙌
+                    </p>
+                    
+                    <p className="text-sm text-muted-foreground mt-6">
+                      Regards,<br />
+                      <span className="font-semibold">Team BBD Bag Professional Association</span>
+                    </p>
                   </div>
-
-                  <p className="text-sm text-muted-foreground mt-4">
-                    With regards,<br />
-                    <span className="font-semibold">Team CKCA (Central Kolkata Chartered Accountants Association)</span>
-                  </p>
                 </ScrollAnimation>
               </div>
             </TabsContent>
