@@ -25,6 +25,7 @@ import gstr9EventFlyer from '@/assets/GSTR-9-Event-Flyer.jpeg';
 import charitableTrustsFlyer from '@/assets/charitable-trusts-flyer.jpeg';
 import labourCodesFlyer from '@/assets/labour-codes-flyer.jpeg';
 import nbfcAuditFlyerJan16 from '@/assets/nbfc-audit-flyer-jan16.jpeg';
+import ckcaSeminarFlyer from '@/assets/ckca-seminar-flyer.jpeg';
 import pastEvent1 from '@/assets/past-event-1.jpeg';
 import pastEvent2 from '@/assets/past-event-2.jpeg';
 import pastEvent3 from '@/assets/past-event-3.jpeg';
@@ -80,8 +81,8 @@ const Home = () => {
                 <ScrollAnimation animation="scale-in" delay={200}>
                   <div className="relative max-w-md mx-auto">
                     <img
-                      src={nbfcAuditFlyerJan16}
-                      alt="Seminar on NBFC Audit and Compliances - BBD Bag Professional Association"
+                      src={ckcaSeminarFlyer}
+                      alt="CKCA 4 Unstructured CPE Hrs Seminar on AI in Stock Investing and PMLA"
                       className="w-full rounded-xl shadow-lg"
                     />
                   </div>
@@ -90,7 +91,7 @@ const Home = () => {
                 {/* Event Details */}
                 <ScrollAnimation animation="slide-left" delay={400}>
                   <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-6">
-                    📢 NON CPE SEMINAR ON NBFC AUDIT AND COMPLIANCES 📢
+                    📢 4 Unstructured CPE Hrs Seminar on AI in Stock Investing and PMLA for Auditors and Tax Professionals 📢
                   </h3>
 
                   {/* Event Details */}
@@ -99,21 +100,21 @@ const Home = () => {
                       <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
                       <div>
                         <div className="font-semibold text-secondary">Date:</div>
-                        <span>Friday, 16th January 2026</span>
+                        <span>Tuesday, 27th January 2026</span>
                       </div>
                     </div>
                     <div className="flex items-start text-muted-foreground">
                       <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
                       <div>
                         <div className="font-semibold text-secondary">Time:</div>
-                        <span>5.00 PM to 7.00 PM</span>
+                        <span>3:00 PM to 7:00 PM</span>
                       </div>
                     </div>
                     <div className="flex items-start text-muted-foreground">
                       <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
                       <div>
                         <div className="font-semibold text-secondary">Venue:</div>
-                        <span>BBD Bag Ashika Conference Hall, Commerce House, 2A Ganesh Chandra Avenue, 4th Floor, Room No 1, Kolkata – 700013</span>
+                        <span>CKCA Dharam Chandra Pugalia Knowledge Centre, Poddar Court, Gate No - 3, Suite - 6B, 6th Floor, 18, Rabindra Sarani, Kolkata - 700 001</span>
                       </div>
                     </div>
                   </div>
@@ -122,34 +123,40 @@ const Home = () => {
                   <div className="bg-white rounded-lg p-6 mb-6 shadow-sm">
                     <div className="space-y-3 text-muted-foreground">
                       <div>
-                        <span className="font-semibold text-secondary">🎯 Topic:</span> NBFC Audit and Compliances - RBI Master Directions 2025
+                        <span className="font-semibold text-secondary">🎯 Topics & Speakers:</span>
+                        <ul className="mt-2 list-disc list-inside">
+                          <li>AI in Stock Investing – CA Suresh Modi</li>
+                          <li>PMLA for Auditors and Tax Professionals – Dr. (Adv) Vishal Gupta</li>
+                        </ul>
                       </div>
                       <div>
-                        <span className="font-semibold text-secondary">👤 Session Chairman:</span> Apurva Maheswari
+                        <span className="font-semibold text-secondary">🧮 CPE Hours:</span> 4 hrs (Unstructured)
                       </div>
                       <div>
-                        <span className="font-semibold text-secondary">👤 Speaker:</span> CA Mohit Bhuteria
-                      </div>
-                      <div>
-                        <span className="font-semibold text-secondary">💰 Fees:</span> NIL (Free to attend)
-                      </div>
-                      <div>
-                        <span className="font-semibold text-secondary">📌 Mode:</span> Physical Seminar
+                        <span className="font-semibold text-secondary">💰 Fees:</span> ₹200/- for Non-CKCA Members | Free for CKCA Members
                       </div>
                       <div className="pt-2 border-t">
-                        <span className="font-semibold text-secondary">📲 Registration / Confirmation:</span>
-                        <div className="mt-1">📞 CA Apurva Maheswari – 9836107990</div>
-                        <div>📞 CA Ravi Sureka – 9830608999</div>
+                        <span className="font-semibold text-secondary">🔗 Registration Link:</span>
+                        <div className="mt-1">
+                          <a 
+                            href="https://centralkolkata.org/#sectionEvent1" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline"
+                          >
+                            https://centralkolkata.org/#sectionEvent1
+                          </a>
+                        </div>
                       </div>
                       <div className="text-primary font-semibold mt-2">
-                        👉 Limited seats – prior registration required.
+                        👉 Limited Seats Available – Pre Registration required.
                       </div>
                     </div>
                   </div>
 
                   <p className="text-sm text-muted-foreground mt-4">
                     With regards,<br />
-                    <span className="font-semibold">B.B.D. PROFESSIONAL ASSOCIATION</span>
+                    <span className="font-semibold">Team CKCA (Central Kolkata Chartered Accountants Association)</span>
                   </p>
                 </ScrollAnimation>
               </div>
@@ -158,6 +165,75 @@ const Home = () => {
             {/* Past Events Tab */}
             <TabsContent value="past">
               <div className="space-y-16">
+                {/* NBFC Audit Event (Jan 16, 2026) - Now Past */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                  {/* Event Flyer */}
+                  <ScrollAnimation animation="scale-in" delay={200}>
+                    <div className="relative max-w-md mx-auto">
+                      <img
+                        src={nbfcAuditFlyerJan16}
+                        alt="Seminar on NBFC Audit and Compliances - BBD Bag Professional Association"
+                        className="w-full rounded-xl shadow-lg"
+                      />
+                    </div>
+                  </ScrollAnimation>
+
+                  {/* Event Details */}
+                  <ScrollAnimation animation="slide-left" delay={400}>
+                    <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-6">
+                      📢 NON CPE SEMINAR ON NBFC AUDIT AND COMPLIANCES 📢
+                    </h3>
+
+                    <div className="space-y-3 mb-8">
+                      <div className="flex items-start text-muted-foreground">
+                        <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                        <div>
+                          <div className="font-semibold text-secondary">Date:</div>
+                          <span>Friday, 16th January 2026</span>
+                        </div>
+                      </div>
+                      <div className="flex items-start text-muted-foreground">
+                        <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                        <div>
+                          <div className="font-semibold text-secondary">Time:</div>
+                          <span>5.00 PM to 7.00 PM</span>
+                        </div>
+                      </div>
+                      <div className="flex items-start text-muted-foreground">
+                        <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                        <div>
+                          <div className="font-semibold text-secondary">Venue:</div>
+                          <span>BBD Bag Ashika Conference Hall, Commerce House, 2A Ganesh Chandra Avenue, 4th Floor, Room No 1, Kolkata – 700013</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-white rounded-lg p-6 mb-6 shadow-sm">
+                      <div className="space-y-3 text-muted-foreground">
+                        <div>
+                          <span className="font-semibold text-secondary">🎯 Topic:</span> NBFC Audit and Compliances - RBI Master Directions 2025
+                        </div>
+                        <div>
+                          <span className="font-semibold text-secondary">👤 Session Chairman:</span> Apurva Maheswari
+                        </div>
+                        <div>
+                          <span className="font-semibold text-secondary">👤 Speaker:</span> CA Mohit Bhuteria
+                        </div>
+                        <div>
+                          <span className="font-semibold text-secondary">💰 Fees:</span> NIL (Free to attend)
+                        </div>
+                        <div>
+                          <span className="font-semibold text-secondary">📌 Mode:</span> Physical Seminar
+                        </div>
+                      </div>
+                    </div>
+
+                    <p className="text-sm text-muted-foreground mt-4">
+                      With regards,<br />
+                      <span className="font-semibold">B.B.D. PROFESSIONAL ASSOCIATION</span>
+                    </p>
+                  </ScrollAnimation>
+                </div>
                 {/* GSTR 9 Event Details Section */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                   {/* Event Flyer */}
