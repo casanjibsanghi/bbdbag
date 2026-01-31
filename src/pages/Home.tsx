@@ -26,6 +26,7 @@ import charitableTrustsFlyer from '@/assets/charitable-trusts-flyer.jpeg';
 import labourCodesFlyer from '@/assets/labour-codes-flyer.jpeg';
 import nbfcAuditFlyerJan16 from '@/assets/nbfc-audit-flyer-jan16.jpeg';
 import annualPicnicFlyer from '@/assets/annual-picnic-flyer.jpeg';
+import toastmastersFlyer from '@/assets/toastmasters-flyer.jpeg';
 import pastEvent1 from '@/assets/past-event-1.jpeg';
 import pastEvent2 from '@/assets/past-event-2.jpeg';
 import pastEvent3 from '@/assets/past-event-3.jpeg';
@@ -76,87 +77,75 @@ const Home = () => {
 
             {/* Upcoming Events Tab */}
             <TabsContent value="upcoming">
-              <div className="max-w-4xl mx-auto">
-                <ScrollAnimation animation="fade-up" delay={200}>
-                  <div className="bg-white rounded-xl shadow-lg p-8 text-center">
-                    <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-6">
-                      Speak with Confidence & Lead with Impact 🎤✨
-                    </h3>
-                    
-                    <p className="text-lg text-muted-foreground mb-6">
-                      Ever wanted to express your ideas confidently, speak fearlessly in public, or grow as a leader?
-                    </p>
-                    
-                    <p className="text-xl font-semibold text-primary mb-6">
-                      Here's your chance!
-                    </p>
-                    
-                    <div className="bg-bbd-gray-50 rounded-lg p-6 mb-8">
-                      <h4 className="text-xl font-bold text-secondary mb-4">
-                        🚀 FREE Toastmasters Demo Meeting
-                      </h4>
-                      <p className="text-muted-foreground mb-4">
-                        Organised by BBD Bag Professional Association
-                      </p>
-                      
-                      <div className="space-y-3 text-left max-w-md mx-auto">
-                        <div className="flex items-start text-muted-foreground">
-                          <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
-                          <div>
-                            <span className="font-semibold text-secondary">Date:</span> Saturday, 31st January 2026
-                          </div>
-                        </div>
-                        <div className="flex items-start text-muted-foreground">
-                          <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
-                          <div>
-                            <span className="font-semibold text-secondary">Time:</span> 4:00 PM – 6:00 PM
-                          </div>
-                        </div>
-                        <div className="flex items-start text-muted-foreground">
-                          <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
-                          <div>
-                            <span className="font-semibold text-secondary">Venue:</span> BBD Bag Ashika Conference Hall
-                          </div>
-                        </div>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                {/* Event Flyer */}
+                <ScrollAnimation animation="scale-in" delay={200}>
+                  <div className="relative max-w-md mx-auto">
+                    <img
+                      src={toastmastersFlyer}
+                      alt="FREE Toastmasters Demo Meeting - BBD Bag Professional Association"
+                      className="w-full rounded-xl shadow-lg"
+                    />
+                  </div>
+                </ScrollAnimation>
+
+                {/* Event Details */}
+                <ScrollAnimation animation="slide-left" delay={400}>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-6">
+                    🎤 Build Confidence. Speak with Impact. Lead with Presence! 🚀
+                  </h3>
+
+                  <p className="text-lg text-muted-foreground mb-6">
+                    BBD Bag Professional Association invites you to a <span className="font-semibold text-primary">FREE Toastmasters Demo Meeting</span> — a perfect opportunity to sharpen your public speaking, communication, and leadership skills in a safe & supportive environment.
+                  </p>
+
+                  <p className="text-muted-foreground mb-6">
+                    ✨ Whether you're a professional or student or entrepreneur — this is your chance to step out of your comfort zone and grow with like-minded individuals.
+                  </p>
+
+                  <div className="space-y-3 mb-8">
+                    <div className="flex items-start text-muted-foreground">
+                      <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        <span className="font-semibold text-secondary">Date:</span> 31st January 2026
                       </div>
                     </div>
-                    
-                    <p className="text-muted-foreground mb-6">
-                      Experience firsthand how Toastmasters transforms communication skills, builds leadership, and boosts confidence - in a fun, supportive, and professional environment 🌟
-                    </p>
-                    
-                    <div className="space-y-2 text-muted-foreground mb-6">
-                      <p>👥 Open to all interested professionals</p>
-                      <p>🎯 No prior experience required</p>
+                    <div className="flex items-start text-muted-foreground">
+                      <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        <span className="font-semibold text-secondary">Time:</span> 4:00 PM – 6:00 PM
+                      </div>
                     </div>
-                    
-                    <div className="bg-primary/10 rounded-lg p-4 mb-6">
-                      <p className="font-semibold text-secondary mb-2">
-                        👉 Join our WhatsApp group for updates & details:
-                      </p>
-                      <a 
-                        href="https://chat.whatsapp.com/Gy4oTYBX3ga9FVXGK31vkq" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-primary hover:underline font-medium"
-                      >
-                        🔗 https://chat.whatsapp.com/Gy4oTYBX3ga9FVXGK31vkq
-                      </a>
+                    <div className="flex items-start text-muted-foreground">
+                      <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        <span className="font-semibold text-secondary">Venue:</span> BBD Bag Ashika Conference Hall
+                      </div>
                     </div>
-                    
-                    <p className="text-lg font-semibold text-primary mb-4">
-                      Come, discover the speaker and leader within you!
-                    </p>
-                    
-                    <p className="text-muted-foreground">
-                      We look forward to seeing you there 🙌
-                    </p>
-                    
-                    <p className="text-sm text-muted-foreground mt-6">
-                      Regards,<br />
-                      <span className="font-semibold">Team BBD Bag Professional Association</span>
-                    </p>
                   </div>
+
+                  <div className="bg-primary/10 rounded-lg p-4 mb-6">
+                    <p className="font-semibold text-secondary mb-2">
+                      👉 Join our WhatsApp group for updates & registration:
+                    </p>
+                    <a 
+                      href="https://chat.whatsapp.com/Gy4oTYBX3ga9FVXGK31vkq" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline font-medium"
+                    >
+                      🔗 https://chat.whatsapp.com/Gy4oTYBX3ga9FVXGK31vkq
+                    </a>
+                  </div>
+
+                  <p className="text-lg font-semibold text-primary mb-4">
+                    Let's take the first step towards confident communication — one speech at a time! 🌟
+                  </p>
+
+                  <p className="text-sm text-muted-foreground mt-4">
+                    Regards,<br />
+                    <span className="font-semibold">BBD Bag Professional Association</span>
+                  </p>
                 </ScrollAnimation>
               </div>
             </TabsContent>
