@@ -147,6 +147,62 @@ const Home = () => {
                   </ScrollAnimation>
                 </div>
 
+                {/* Toastmasters Demo Meeting (Jan 31, 2026) */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                  <ScrollAnimation animation="scale-in" delay={200}>
+                    <div className="relative max-w-md mx-auto">
+                      <img
+                        src={toastmastersFlyer}
+                        alt="FREE Toastmasters Demo Meeting - BBD Bag Professional Association"
+                        className="w-full rounded-xl shadow-lg"
+                      />
+                    </div>
+                  </ScrollAnimation>
+
+                  <ScrollAnimation animation="slide-left" delay={400}>
+                    <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-6">
+                      🎤 Build Confidence. Speak with Impact. Lead with Presence! 🚀
+                    </h3>
+
+                    <p className="text-lg text-muted-foreground mb-6">
+                      BBD Bag Professional Association invites you to a <span className="font-semibold text-primary">FREE Toastmasters Demo Meeting</span> — a perfect opportunity to sharpen your public speaking, communication, and leadership skills in a safe & supportive environment.
+                    </p>
+
+                    <p className="text-muted-foreground mb-6">
+                      ✨ Whether you're a professional or student or entrepreneur — this is your chance to step out of your comfort zone and grow with like-minded individuals.
+                    </p>
+
+                    <div className="space-y-3 mb-8">
+                      <div className="flex items-start text-muted-foreground">
+                        <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                        <div>
+                          <div className="font-semibold text-secondary">Date:</div>
+                          <span>31st January 2026</span>
+                        </div>
+                      </div>
+                      <div className="flex items-start text-muted-foreground">
+                        <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                        <div>
+                          <div className="font-semibold text-secondary">Time:</div>
+                          <span>4:00 PM – 6:00 PM</span>
+                        </div>
+                      </div>
+                      <div className="flex items-start text-muted-foreground">
+                        <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                        <div>
+                          <div className="font-semibold text-secondary">Venue:</div>
+                          <span>BBD Bag Ashika Conference Hall</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <p className="text-sm text-muted-foreground mt-4">
+                      Regards,<br />
+                      <span className="font-semibold">BBD Bag Professional Association</span>
+                    </p>
+                  </ScrollAnimation>
+                </div>
+
                 {/* Annual Picnic Event (Jan 18, 2026) - Now Past */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                   {/* Event Flyer */}
