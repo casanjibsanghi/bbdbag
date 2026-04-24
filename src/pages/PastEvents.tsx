@@ -7,6 +7,7 @@ import labourCodesFlyer from '@/assets/labour-codes-flyer.jpeg';
 import charitableTrustsFlyer from '@/assets/charitable-trusts-flyer.jpeg';
 import nbfcAuditFlyer from '@/assets/nbfc-audit-flyer.jpeg';
 import nbfcAuditFlyerJan16 from '@/assets/nbfc-audit-flyer-jan16.jpeg';
+import gstSeminarMar17Flyer from '@/assets/gst-seminar-mar17-flyer.jpeg';
 import pastEvent1 from '@/assets/past-event-1.jpeg';
 import pastEvent2 from '@/assets/past-event-2.jpeg';
 import pastEvent3 from '@/assets/past-event-3.jpeg';
@@ -26,6 +27,65 @@ const PastEvents = () => {
             Explore our successful events and professional gatherings
           </p>
         </ScrollAnimation>
+
+        {/* GST Seminar Event Section (Mar 17, 2026) */}
+        <section className="py-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <ScrollAnimation animation="scale-in" delay={200}>
+              <div className="relative max-w-md mx-auto sticky top-24">
+                <img
+                  src={gstSeminarMar17Flyer}
+                  alt="Seminar on Goods and Services Tax - BBD Bag CA CPE Study Circle of EIRC of ICAI"
+                  className="w-full rounded-xl shadow-lg"
+                />
+              </div>
+            </ScrollAnimation>
+
+            <ScrollAnimation animation="slide-left" delay={400}>
+              <h2 className="text-3xl lg:text-4xl font-bold text-secondary mb-6">
+                Seminar on Goods & Services Tax
+              </h2>
+
+              <div className="space-y-3 mb-8">
+                <div className="flex items-start text-muted-foreground">
+                  <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-secondary">Date:</div>
+                    <span>Tuesday, 17th March 2026</span>
+                  </div>
+                </div>
+                <div className="flex items-start text-muted-foreground">
+                  <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-secondary">Time:</div>
+                    <span>4.00 PM - 7.00 PM</span>
+                  </div>
+                </div>
+                <div className="flex items-start text-muted-foreground">
+                  <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-secondary">Venue:</div>
+                    <span>BBD Bag Ashika Conference Hall, Commerce House, 2A Ganesh Chandra Avenue, 4th Floor, Room No 1, Kolkata 700013</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-card rounded-lg p-6 mb-6 shadow-sm">
+                <div className="space-y-3 text-muted-foreground">
+                  <div><span className="font-semibold text-secondary">CPE Hours:</span> 3 CPE Hour</div>
+                  <div><span className="font-semibold text-secondary">Theme:</span> Decoding GST Complexities & Practical Challenges</div>
+                  <div><span className="font-semibold text-secondary">Topics:</span> Classification of Goods/Services, Place of Supply Goods/Services, Reverse Charge Mechanism, Price Vs Valuation</div>
+                  <div><span className="font-semibold text-secondary">Eminent Speaker:</span> CA Sushil Kumar Goyal</div>
+                  <div><span className="font-semibold text-secondary">Session Chairman:</span> CA Ravi Sureka</div>
+                  <div><span className="font-semibold text-secondary">Fees:</span> Rs. 200/-</div>
+                  <div><span className="font-semibold text-secondary">Payment Link:</span> https://imjo.in/r2dWQU</div>
+                  <div><span className="font-semibold text-secondary">Convenor:</span> CA Harsh Satish Udeshi (+91 98363 57711)</div>
+                  <div><span className="font-semibold text-secondary">Deputy Convenor:</span> CA Muskan Sethia (+91 98309 31197)</div>
+                </div>
+              </div>
+            </ScrollAnimation>
+          </div>
+        </section>
 
         {/* NBFC Audit Event Section (Jan 16, 2026) - NEW */}
         <section className="py-12">
