@@ -78,77 +78,16 @@ const Home = () => {
 
             {/* Upcoming Events Tab */}
             <TabsContent value="upcoming">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                {/* Event Flyer */}
-                <ScrollAnimation animation="scale-in" delay={200}>
-                  <div className="relative max-w-md mx-auto">
-                    <img
-                      src={toastmastersFlyer}
-                      alt="FREE Toastmasters Demo Meeting - BBD Bag Professional Association"
-                      className="w-full rounded-xl shadow-lg"
-                    />
-                  </div>
-                </ScrollAnimation>
-
-                {/* Event Details */}
-                <ScrollAnimation animation="slide-left" delay={400}>
-                  <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-6">
-                    🎤 Build Confidence. Speak with Impact. Lead with Presence! 🚀
+              <ScrollAnimation animation="fade-up" className="text-center max-w-2xl mx-auto">
+                <div className="bg-card rounded-lg p-8 shadow-sm">
+                  <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-4">
+                    No Upcoming Events
                   </h3>
-
-                  <p className="text-lg text-muted-foreground mb-6">
-                    BBD Bag Professional Association invites you to a <span className="font-semibold text-primary">FREE Toastmasters Demo Meeting</span> — a perfect opportunity to sharpen your public speaking, communication, and leadership skills in a safe & supportive environment.
+                  <p className="text-muted-foreground">
+                    Please check back soon for new event announcements.
                   </p>
-
-                  <p className="text-muted-foreground mb-6">
-                    ✨ Whether you're a professional or student or entrepreneur — this is your chance to step out of your comfort zone and grow with like-minded individuals.
-                  </p>
-
-                  <div className="space-y-3 mb-8">
-                    <div className="flex items-start text-muted-foreground">
-                      <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
-                      <div>
-                        <span className="font-semibold text-secondary">Date:</span> 31st January 2026
-                      </div>
-                    </div>
-                    <div className="flex items-start text-muted-foreground">
-                      <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
-                      <div>
-                        <span className="font-semibold text-secondary">Time:</span> 4:00 PM – 6:00 PM
-                      </div>
-                    </div>
-                    <div className="flex items-start text-muted-foreground">
-                      <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
-                      <div>
-                        <span className="font-semibold text-secondary">Venue:</span> BBD Bag Ashika Conference Hall
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-primary/10 rounded-lg p-4 mb-6">
-                    <p className="font-semibold text-secondary mb-2">
-                      👉 Join our WhatsApp group for updates & registration:
-                    </p>
-                    <a 
-                      href="https://chat.whatsapp.com/Gy4oTYBX3ga9FVXGK31vkq" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline font-medium"
-                    >
-                      🔗 https://chat.whatsapp.com/Gy4oTYBX3ga9FVXGK31vkq
-                    </a>
-                  </div>
-
-                  <p className="text-lg font-semibold text-primary mb-4">
-                    Let's take the first step towards confident communication — one speech at a time! 🌟
-                  </p>
-
-                  <p className="text-sm text-muted-foreground mt-4">
-                    Regards,<br />
-                    <span className="font-semibold">BBD Bag Professional Association</span>
-                  </p>
-                </ScrollAnimation>
-              </div>
+                </div>
+              </ScrollAnimation>
             </TabsContent>
 
             {/* Past Events Tab */}
