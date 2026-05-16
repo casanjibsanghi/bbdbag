@@ -80,72 +80,13 @@ const Home = () => {
 
             {/* Upcoming Events Tab */}
             <TabsContent value="upcoming">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                <ScrollAnimation animation="scale-in" delay={200}>
-                  <div className="relative max-w-md mx-auto">
-                    <img
-                      src={gstAppellateTribunalFlyer}
-                      alt="Seminar on GST Appellate Tribunal Filing and Procedure - BBD Bag CA CPE Study Circle"
-                      className="w-full rounded-xl shadow-lg"
-                    />
-                  </div>
-                </ScrollAnimation>
-
-                <ScrollAnimation animation="slide-left" delay={400}>
-                  <p className="text-primary font-semibold mb-3">
-                    BBD Bag CA CPE Study Circle of EIRC of ICAI presents
-                  </p>
-                  <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-6">
-                    Seminar on GST
-                  </h3>
-
-                  <div className="space-y-3 mb-8">
-                    <div className="text-muted-foreground">
-                      <span className="font-semibold text-secondary">Topic:</span> GST Appellate Tribunal Filing & Procedure
-                    </div>
-                    <div className="text-muted-foreground">
-                      <span className="font-semibold text-secondary">Eminent Speaker:</span> Adv. (CA) Tarun Kr. Gupta
-                    </div>
-                    <div className="text-muted-foreground">
-                      <span className="font-semibold text-secondary">Session Moderator:</span> CA Ravi Sureka
-                    </div>
-                    <div className="flex items-start text-muted-foreground">
-                      <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
-                      <div>
-                        <div className="font-semibold text-secondary">Date:</div>
-                        <span>Friday, 24th April 2026</span>
-                      </div>
-                    </div>
-                    <div className="flex items-start text-muted-foreground">
-                      <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
-                      <div>
-                        <div className="font-semibold text-secondary">Time:</div>
-                        <span>04:00 PM to 07:00 PM</span>
-                      </div>
-                    </div>
-                    <div className="flex items-start text-muted-foreground">
-                      <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
-                      <div>
-                        <div className="font-semibold text-secondary">Venue:</div>
-                        <span>BBD Bag Ashika Conference Hall, Commerce House, 2A Ganesh Chandra Avenue, 4th Floor, Room No 1, Kolkata 700013</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-card rounded-lg p-6 mb-6 shadow-sm">
-                    <div className="space-y-3 text-muted-foreground">
-                      <div><span className="font-semibold text-secondary">Registration Fees:</span> Rs 200</div>
-                      <div><span className="font-semibold text-secondary">CPE:</span> 3 hrs</div>
-                      <div>
-                        <span className="font-semibold text-secondary">Registration Link:</span>{' '}
-                        <a href="https://imjo.in/5WSywv" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
-                          https://imjo.in/5WSywv
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </ScrollAnimation>
-              </div>
+              <ScrollAnimation animation="fade-up" className="text-center py-16">
+                <Calendar className="w-16 h-16 text-primary mx-auto mb-4" />
+                <h3 className="text-2xl font-bold text-secondary mb-2">No Upcoming Events</h3>
+                <p className="text-muted-foreground">
+                  Stay tuned — new events will be announced soon.
+                </p>
+              </ScrollAnimation>
             </TabsContent>
 
             {/* Past Events Tab */}
