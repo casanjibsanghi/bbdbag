@@ -30,6 +30,7 @@ import annualPicnicFlyer from '@/assets/annual-picnic-flyer.jpeg';
 import toastmastersFlyer from '@/assets/toastmasters-flyer.jpeg';
 import gstSeminarMar17Flyer from '@/assets/gst-seminar-mar17-flyer.jpeg';
 import gstAppellateTribunalFlyer from '@/assets/gst-appellate-tribunal-apr24-flyer.jpeg';
+import annualConferenceFlyer from '@/assets/annual-conference-2026-flyer.jpg';
 import pastEvent1 from '@/assets/past-event-1.jpeg';
 import pastEvent2 from '@/assets/past-event-2.jpeg';
 import pastEvent3 from '@/assets/past-event-3.jpeg';
