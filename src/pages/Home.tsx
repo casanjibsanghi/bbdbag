@@ -30,6 +30,7 @@ import annualPicnicFlyer from '@/assets/annual-picnic-flyer.jpeg';
 import toastmastersFlyer from '@/assets/toastmasters-flyer.jpeg';
 import gstSeminarMar17Flyer from '@/assets/gst-seminar-mar17-flyer.jpeg';
 import gstAppellateTribunalFlyer from '@/assets/gst-appellate-tribunal-apr24-flyer.jpeg';
+import annualConferenceFlyer from '@/assets/annual-conference-2026-flyer.jpg';
 import pastEvent1 from '@/assets/past-event-1.jpeg';
 import pastEvent2 from '@/assets/past-event-2.jpeg';
 import pastEvent3 from '@/assets/past-event-3.jpeg';
@@ -80,14 +81,85 @@ const Home = () => {
 
             {/* Upcoming Events Tab */}
             <TabsContent value="upcoming">
-              <ScrollAnimation animation="fade-up" className="text-center py-16">
-                <Calendar className="w-16 h-16 text-primary mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-secondary mb-2">No Upcoming Events</h3>
-                <p className="text-muted-foreground">
-                  Stay tuned — new events will be announced soon.
-                </p>
-              </ScrollAnimation>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <ScrollAnimation animation="scale-in" delay={200}>
+                  <div className="relative max-w-md mx-auto">
+                    <img
+                      src={annualConferenceFlyer}
+                      alt="BBD Bag Professional Association 4th Annual Conference 2026 - Transformation: AI & Networking"
+                      className="w-full rounded-xl shadow-lg"
+                    />
+                  </div>
+                </ScrollAnimation>
+
+                <ScrollAnimation animation="slide-left" delay={400}>
+                  <p className="text-primary font-semibold mb-3">
+                    BBD Bag Professional Association presents
+                  </p>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-secondary mb-2">
+                    4<sup>th</sup> Annual Conference 2026
+                  </h3>
+                  <p className="text-lg font-semibold text-secondary mb-6">
+                    Transformation: AI & Networking
+                  </p>
+
+                  <div className="space-y-3 mb-8">
+                    <div className="flex items-start text-muted-foreground">
+                      <Calendar className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        <div className="font-semibold text-secondary">Date:</div>
+                        <span>Saturday, 30th May 2026</span>
+                      </div>
+                    </div>
+                    <div className="flex items-start text-muted-foreground">
+                      <Clock className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        <div className="font-semibold text-secondary">Time:</div>
+                        <span>10:00 AM onwards</span>
+                      </div>
+                    </div>
+                    <div className="flex items-start text-muted-foreground">
+                      <MapPin className="w-5 h-5 mr-3 text-primary mt-1 flex-shrink-0" />
+                      <div>
+                        <div className="font-semibold text-secondary">Venue:</div>
+                        <span>Royal Bengal Room, City Centre I, Salt Lake, Kolkata</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-card rounded-lg p-6 mb-6 shadow-sm">
+                    <div className="space-y-3 text-muted-foreground">
+                      <div><span className="font-semibold text-secondary">Delegate Fee:</span> ₹1800 (including taxes)</div>
+                      <div>
+                        <span className="font-semibold text-secondary">Chief Guest:</span> Mr. Vinod Kumar Gupta, Managing Director, Dollar Industries Ltd.
+                      </div>
+                      <div>
+                        <span className="font-semibold text-secondary">Eminent Speakers:</span>
+                        <ul className="list-disc list-inside mt-1 space-y-1">
+                          <li>CA Himanshu Kumar — AI in Tax Practice: From Compliance to Advisory</li>
+                          <li>CA (Dr.) Rakesh Gupta — Search & Block Assessment under Income Tax Act, 2025</li>
+                          <li>CA Nilesh Shivji Vikamsey — Networking of CA Firms and Models of Aggregation</li>
+                          <li>Mr. Anuj Singhal — The Future of the Indian Capital Market in a Deglobalised World</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <span className="font-semibold text-secondary">Brochure:</span>{' '}
+                        <a href="/documents/bbd-bag-4th-annual-conference-brochure.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
+                          View full brochure
+                        </a>
+                      </div>
+                      <div>
+                        <span className="font-semibold text-secondary">Registration Link:</span>{' '}
+                        <a href="https://forms.gle/sCjyiW7GbDMpiZdE7" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
+                          https://forms.gle/sCjyiW7GbDMpiZdE7
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </ScrollAnimation>
+              </div>
             </TabsContent>
+
 
             {/* Past Events Tab */}
             <TabsContent value="past">
