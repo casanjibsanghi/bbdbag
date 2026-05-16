@@ -36,6 +36,34 @@ type EventItem = {
 
 const pastEvents: EventItem[] = [
   {
+    title: 'Seminar on GST',
+    image: gstAppellateTribunalFlyer,
+    alt: 'Seminar on GST Appellate Tribunal Filing and Procedure - BBD Bag CA CPE Study Circle',
+    date: 'Friday, 24th April 2026',
+    time: '04:00 PM to 07:00 PM',
+    venue: 'BBD Bag Ashika Conference Hall, Commerce House, 2A Ganesh Chandra Avenue, 4th Floor, Room No 1, Kolkata 700013',
+    intro: (
+      <p className="text-primary font-semibold mb-3">
+        BBD Bag CA CPE Study Circle of EIRC of ICAI presents
+      </p>
+    ),
+    details: [
+      { label: 'Topic', value: 'GST Appellate Tribunal Filing & Procedure' },
+      { label: 'Eminent Speaker', value: 'Adv. (CA) Tarun Kr. Gupta' },
+      { label: 'Session Moderator', value: 'CA Ravi Sureka' },
+      { label: 'Registration Fees', value: 'Rs 200' },
+      { label: 'CPE', value: '3 hrs' },
+      {
+        label: 'Registration Link',
+        value: (
+          <a href="https://imjo.in/5WSywv" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
+            https://imjo.in/5WSywv
+          </a>
+        ),
+      },
+    ],
+  },
+  {
     title: 'Seminar on Goods & Services Tax',
     image: gstSeminarMar17Flyer,
     alt: 'Seminar on Goods and Services Tax - BBD Bag CA CPE Study Circle of EIRC of ICAI',
