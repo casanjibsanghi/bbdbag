@@ -12,6 +12,9 @@ import toastmastersFlyer from '@/assets/toastmasters-flyer.jpeg';
 import gstSeminarMar17Flyer from '@/assets/gst-seminar-mar17-flyer.jpeg';
 import gstAppellateTribunalFlyer from '@/assets/gst-appellate-tribunal-apr24-flyer.jpeg';
 import annualConferenceFlyer from '@/assets/annual-conference-2026-flyer.jpg';
+import auditSeminarFlyer from '@/assets/audit-seminar-flyer.jpeg.asset.json';
+import geetaManthanFlyer from '@/assets/geeta-manthan-flyer.jpeg.asset.json';
+import msmeSeminarFlyer from '@/assets/msme-seminar-flyer.jpeg.asset.json';
 import pastEvent1 from '@/assets/past-event-1.jpeg';
 import pastEvent2 from '@/assets/past-event-2.jpeg';
 import pastEvent3 from '@/assets/past-event-3.jpeg';
@@ -36,6 +39,96 @@ type EventItem = {
 };
 
 const pastEvents: EventItem[] = [
+  {
+    title: 'Seminar on Audit',
+    image: auditSeminarFlyer.url,
+    alt: 'Seminar on Audit - BBD Bag CA CPE Study Circle of EIRC of ICAI',
+    date: 'Thursday, 10th September 2026',
+    time: '04:00 PM to 07:00 PM',
+    venue: 'BBD Bag Ashika Conference Hall, Commerce House, 2A Ganesh Chandra Avenue, 4th Floor, Room No 1, Kolkata 700013',
+    intro: (
+      <p className="text-primary font-semibold mb-3">
+        BBD Bag CA CPE Study Circle of EIRC of ICAI presents
+      </p>
+    ),
+    details: [
+      { label: 'CPE Hours', value: '3 CPE Hours' },
+      { label: 'Topic', value: 'Getting to an Opinion: Audit and Reporting Challenges in SMCs' },
+      { label: 'Speaker', value: 'CA Roshan Bajaj' },
+      { label: 'Session Chairman', value: 'CA Gaurav More' },
+      { label: 'Fees', value: 'Rs. 200/-' },
+      {
+        label: 'Payment Link',
+        value: (
+          <a href="https://imjo.in/CHnT4k" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
+            https://imjo.in/CHnT4k
+          </a>
+        ),
+      },
+      { label: 'Convenor', value: 'CA Harsh Satish Udeshi (+91 98363 57711)' },
+      { label: 'Deputy Convenor', value: 'CA Chandra Bhanu Sinha (+91 94331 40833)' },
+    ],
+  },
+  {
+    title: 'Spiritual Session on Geeta Manthan — Chapter 10, Slokas 12 to 25',
+    image: geetaManthanFlyer.url,
+    alt: 'Spiritual Session on Geeta Manthan Chapter 10 Slokas 12 to 25 - BBD Bag Professional Association',
+    date: 'Sunday, 30th August 2026',
+    time: '11:00 AM to 12:00 Noon',
+    intro: (
+      <p className="text-primary font-semibold mb-3">
+        BBD Bag Professional Association presents
+      </p>
+    ),
+    details: [
+      { label: 'Speaker', value: 'CA R K Vyas' },
+      {
+        label: 'Zoom Link',
+        value: (
+          <a href="https://us06web.zoom.us/j/88265401292?pwd=tpnrvLhMbbYocBTGeG9iwLFtkfPs1s.1" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium break-all">
+            https://us06web.zoom.us/j/88265401292
+          </a>
+        ),
+      },
+      { label: 'Meeting ID', value: '882 6540 1292' },
+      { label: 'Passcode', value: '733775' },
+    ],
+    closing: (
+      <>
+        With regards,<br />
+        <span className="font-semibold">BBD Bag Professional Association</span>
+      </>
+    ),
+  },
+  {
+    title: 'Seminar on MSME',
+    image: msmeSeminarFlyer.url,
+    alt: 'Seminar on MSME - BBD Bag CA CPE Study Circle of EIRC of ICAI',
+    date: 'Saturday, 29th August 2026',
+    time: '4:00 PM to 6:00 PM',
+    venue: 'BBD Bag Ashika Conference Hall, Commerce House, 2A Ganesh Chandra Avenue, 4th Floor, Room No 1, Kolkata 700013',
+    intro: (
+      <p className="text-primary font-semibold mb-3">
+        BBD Bag CA CPE Study Circle of EIRC of ICAI presents
+      </p>
+    ),
+    details: [
+      { label: 'CPE Hours', value: '2 CPE Hours' },
+      { label: 'Topic', value: 'Recent Amendments in MSME Act' },
+      { label: 'Speaker', value: 'CA Bishnu Basia' },
+      { label: 'Fees', value: 'Rs. 200/-' },
+      {
+        label: 'Payment Link',
+        value: (
+          <a href="https://imjo.in/FdrsNe" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
+            https://imjo.in/FdrsNe
+          </a>
+        ),
+      },
+      { label: 'Convenor', value: 'CA Harsh Satish Udeshi (+91 98363 57711)' },
+      { label: 'Deputy Convenor', value: 'CA Chandra Bhanu Sinha (+91 94331 40833)' },
+    ],
+  },
   {
     title: '4th Annual Conference 2026 — Transformation: AI & Networking',
     image: annualConferenceFlyer,
