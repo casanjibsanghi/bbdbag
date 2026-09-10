@@ -37,6 +37,46 @@ type EventItem = {
 
 const pastEvents: EventItem[] = [
   {
+    title: '4th Annual Conference 2026 — Transformation: AI & Networking',
+    image: annualConferenceFlyer,
+    alt: '4th Annual Conference 2026 - Transformation: AI & Networking - BBD Bag Professional Association',
+    date: 'Saturday, 30th May 2026',
+    time: '10:00 AM onwards',
+    venue: 'Royal Bengal Room, City Centre I, Salt Lake, Kolkata',
+    intro: (
+      <p className="text-primary font-semibold mb-3">
+        BBD Bag Professional Association presents
+      </p>
+    ),
+    details: [
+      { label: 'Delegate Fee', value: '₹1800 (including taxes)' },
+      {
+        label: 'Chief Guest',
+        value: 'Mr. Vinod Kumar Gupta, Managing Director, Dollar Industries Ltd.',
+      },
+      {
+        label: 'Eminent Speakers',
+        value: 'CA Himanshu Kumar — AI in Tax Practice: From Compliance to Advisory; CA (Dr.) Rakesh Gupta — Search & Block Assessment under Income Tax Act, 2025; CA Nilesh Shivji Vikamsey — Networking of CA Firms and Models of Aggregation; Mr. Anuj Singhal — The Future of the Indian Capital Market in a Deglobalised World',
+      },
+      {
+        label: 'Brochure',
+        value: (
+          <a href="/documents/bbd-bag-4th-annual-conference-brochure.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
+            View full brochure
+          </a>
+        ),
+      },
+      {
+        label: 'Registration Link',
+        value: (
+          <a href="https://forms.gle/sCjyiW7GbDMpiZdE7" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
+            https://forms.gle/sCjyiW7GbDMpiZdE7
+          </a>
+        ),
+      },
+    ],
+  },
+  {
     title: 'Seminar on GST',
     image: gstAppellateTribunalFlyer,
     alt: 'Seminar on GST Appellate Tribunal Filing and Procedure - BBD Bag CA CPE Study Circle',
