@@ -31,7 +31,7 @@ import toastmastersFlyer from '@/assets/toastmasters-flyer.jpeg';
 import gstSeminarMar17Flyer from '@/assets/gst-seminar-mar17-flyer.jpeg';
 import gstAppellateTribunalFlyer from '@/assets/gst-appellate-tribunal-apr24-flyer.jpeg';
 import taxAuditFlyerAsset from '@/assets/tax-audit-flyer.jpeg.asset.json';
-const taxAuditFlyer = taxAuditFlyerAsset.url;
+const taxAuditFlyer = new URL(taxAuditFlyerAsset.url, 'https://bbdbag.lovable.app').href;
 
 import pastEvent1 from '@/assets/past-event-1.jpeg';
 import pastEvent2 from '@/assets/past-event-2.jpeg';
