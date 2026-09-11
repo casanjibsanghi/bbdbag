@@ -21,6 +21,8 @@ import pastEvent3 from '@/assets/past-event-3.jpeg';
 import pastEvent4 from '@/assets/past-event-4.jpeg';
 import pastEvent5 from '@/assets/past-event-5.jpeg';
 
+const assetUrl = (path: string) => new URL(path, 'https://bbdbag.lovable.app').href;
+
 type Detail = {
   label: string;
   value: React.ReactNode;
@@ -41,7 +43,7 @@ type EventItem = {
 const pastEvents: EventItem[] = [
   {
     title: 'Seminar on Audit',
-    image: auditSeminarFlyer.url,
+    image: assetUrl(auditSeminarFlyer.url),
     alt: 'Seminar on Audit - BBD Bag CA CPE Study Circle of EIRC of ICAI',
     date: 'Thursday, 10th September 2026',
     time: '04:00 PM to 07:00 PM',
@@ -71,7 +73,7 @@ const pastEvents: EventItem[] = [
   },
   {
     title: 'Spiritual Session on Geeta Manthan — Chapter 10, Slokas 12 to 25',
-    image: geetaManthanFlyer.url,
+    image: assetUrl(geetaManthanFlyer.url),
     alt: 'Spiritual Session on Geeta Manthan Chapter 10 Slokas 12 to 25 - BBD Bag Professional Association',
     date: 'Sunday, 30th August 2026',
     time: '11:00 AM to 12:00 Noon',
@@ -102,7 +104,7 @@ const pastEvents: EventItem[] = [
   },
   {
     title: 'Seminar on MSME',
-    image: msmeSeminarFlyer.url,
+    image: assetUrl(msmeSeminarFlyer.url),
     alt: 'Seminar on MSME - BBD Bag CA CPE Study Circle of EIRC of ICAI',
     date: 'Saturday, 29th August 2026',
     time: '4:00 PM to 6:00 PM',
