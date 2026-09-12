@@ -3,7 +3,7 @@ import HeroSlider from '@/components/HeroSlider';
 import PersonCard from '@/components/PersonCard';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Calendar, MapPin, Clock, Users, ArrowRight, FileText } from 'lucide-react';
+import { Users, ArrowRight, FileText } from 'lucide-react';
 import ScrollAnimation from '@/hooks/useScrollAnimation';
 import PastEventsList from '@/components/PastEventsList';
 import profileImage from '@/assets/sanjib-sanghi-high-res.png';
