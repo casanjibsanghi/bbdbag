@@ -15,6 +15,7 @@ import annualConferenceFlyer from '@/assets/annual-conference-2026-flyer.jpg';
 import auditSeminarFlyer from '@/assets/audit-seminar-flyer.jpeg.asset.json';
 import geetaManthanFlyer from '@/assets/geeta-manthan-flyer.jpeg.asset.json';
 import msmeSeminarFlyer from '@/assets/msme-seminar-flyer.jpeg.asset.json';
+import taxAuditFlyerAsset from '@/assets/tax-audit-flyer.jpeg.asset.json';
 import pastEvent1 from '@/assets/past-event-1.jpeg';
 import pastEvent2 from '@/assets/past-event-2.jpeg';
 import pastEvent3 from '@/assets/past-event-3.jpeg';
@@ -41,6 +42,40 @@ type EventItem = {
 };
 
 const pastEvents: EventItem[] = [
+  {
+    title: 'Seminar on Tax Audit',
+    image: assetUrl(taxAuditFlyerAsset.url),
+    alt: 'Seminar on Tax Audit - BBD Bag CA CPE Study Circle of EIRC of ICAI',
+    date: 'Friday, 11th September 2026',
+    time: '04:00 PM to 07:00 PM',
+    venue: 'BBD Bag Ashika Conference Hall, Commerce House, 2A Ganesh Chandra Avenue, 4th Floor, Room No 1, Kolkata 700013',
+    intro: (
+      <p className="text-primary font-semibold mb-3">
+        BBD Bag CA CPE Study Circle of EIRC of ICAI presents
+      </p>
+    ),
+    details: [
+      { label: 'CPE Hours', value: '3 CPE Hours' },
+      {
+        label: 'Speakers',
+        value: (
+          <ul className="list-disc list-inside mt-1 space-y-1">
+            <li>CA Shyam Agarwal — Using AI in Tax Audit</li>
+            <li>CA Asim Prakash — Clause by Clause Analysis of Form 3CD</li>
+          </ul>
+        ),
+      },
+      { label: 'Fees', value: 'Rs. 200/-' },
+      {
+        label: 'Payment Link',
+        value: (
+          <a href="https://imjo.in/yFGDYc" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
+            https://imjo.in/yFGDYc
+          </a>
+        ),
+      },
+    ],
+  },
   {
     title: 'Seminar on Audit',
     image: assetUrl(auditSeminarFlyer.url),
